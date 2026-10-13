@@ -250,7 +250,7 @@ def build(doc, presets, shortcuts):
         TABLE(
             [B("Tool", "Tool"), B("Key", "Tombol"), B("Use", "Kegunaan")],
             [
-                ["Selection", "[[V]]", B("Click a layer on the canvas to select it; drag to move it. Hold [[Shift]] to move only horizontally or vertically.", "Klik layer di canvas untuk memilihnya; seret untuk memindahkannya. Tahan [[Shift]] agar hanya bergerak horizontal atau vertikal.")],
+                ["Selection", "[[V]]", B("Click a layer on the canvas to select it; drag to move it. Hold [[Shift]] to move only horizontally or vertically; with Snapping on it sticks to edges and centres ([[Ctrl]] to move freely).", "Klik layer di canvas untuk memilihnya; seret untuk memindahkannya. Tahan [[Shift]] agar hanya bergerak horizontal atau vertikal; saat Snapping aktif layer menempel ke tepi dan tengah ([[Ctrl]] untuk bergerak bebas).")],
                 ["Hand", "[[H]]", B("Drag to pan the canvas. Holding [[Space]] gives the Hand tool temporarily.", "Seret untuk menggeser tampilan canvas. Menahan [[Space]] memberi tool Hand sementara.")],
                 ["Zoom", "[[Z]]", B("Click to zoom in at that point; [[Alt]]-click zooms out.", "Klik untuk memperbesar di titik itu; [[Alt]]+klik untuk memperkecil.")],
                 ["Rotation", "[[W]]", B("Drag around the selected layer to rotate it about its anchor point; [[Shift]] snaps to 45°.", "Seret di sekitar layer terpilih untuk memutarnya pada anchor point; [[Shift]] mengunci ke 45°.")],
@@ -340,6 +340,33 @@ def build(doc, presets, shortcuts):
             ("<b>Resolution</b>: Full, Half, Third, Quarter. Lower resolutions preview faster on large compositions.", "<b>Resolusi</b>: Full, Half, Third, Quarter. Resolusi rendah mempercepat preview pada komposisi besar."),
             ("<b>Grid</b> [[Ctrl+']], <b>transparency grid</b> and <b>safe areas</b> (action and title safe).", "<b>Grid</b> [[Ctrl+']], <b>grid transparansi</b>, dan <b>safe area</b> (action dan title safe)."),
             ("<b>Frame Render Time</b>: how long the last frame took to draw.", "<b>Frame Render Time</b>: berapa lama frame terakhir digambar."),
+        ),
+    ]
+
+    s += [
+        H3("snapping", "Snapping", "Snapping"),
+        IMG("snapping", "Dragging the underline: magenta guides show that its edge now lines up with the centre of the Mark and the top of the letters.", "Menyeret garis bawah: garis magenta menunjukkan tepinya kini sejajar dengan tengah Mark dan bagian atas huruf.", shared=True),
+        P(
+            "With <b>Snapping</b> ticked in the toolbar (or <b>View ▸ Snapping</b> [[Ctrl+Shift+;]]), a layer you drag with the Selection tool sticks to useful lines as soon as it comes within 8 screen pixels of them. A magenta guide shows each line it snapped to.",
+            "Bila <b>Snapping</b> dicentang di toolbar (atau <b>View ▸ Snapping</b> [[Ctrl+Shift+;]]), layer yang diseret dengan Selection tool menempel ke garis-garis penting begitu jaraknya 8 piksel layar atau kurang. Garis magenta menunjukkan setiap garis tempatnya menempel.",
+        ),
+        TABLE(
+            [B("Dragging", "Yang diseret"), B("What snaps", "Yang menempel"), B("Snaps to", "Menempel ke")],
+            [
+                [B("A layer (Selection tool [[V]])", "Layer (Selection tool [[V]])"), B("Its left, centre and right edges, top, middle and bottom, and its anchor point", "Tepi kiri, tengah, dan kanannya, atas, tengah, dan bawahnya, serta anchor point-nya"), B("The composition's edges and centre lines; the edges and centres of every other layer", "Tepi dan garis tengah komposisi; tepi dan tengah setiap layer lain")],
+                [B("The anchor point (Anchor Point tool [[Y]])", "Anchor point (tool Anchor Point [[Y]])"), B("The anchor point", "Anchor point"), B("The layer's own corners, edges and centre; the composition's edges and centre", "Sudut, tepi, dan tengah layer itu sendiri; tepi dan tengah komposisi")],
+            ],
+        ),
+        UL(
+            ("Layers inside the one you drag, and the groups it sits in, are not used as targets: they move with it.", "Layer di dalam layer yang diseret, dan grup tempatnya berada, tidak dipakai sebagai target: semuanya ikut bergerak."),
+            ("Hold [[Ctrl]] during a drag to invert snapping: move freely when Snapping is on, or snap once when it is off.", "Tahan [[Ctrl]] saat menyeret untuk membalik snapping: bergerak bebas saat Snapping aktif, atau menempel sekali saat nonaktif."),
+            ("[[Shift]] still locks the drag to one axis; snapping then only works along that axis.", "[[Shift]] tetap mengunci seretan ke satu sumbu; snapping lalu hanya bekerja di sumbu itu."),
+            ("Snapping uses the layers' boxes at the current frame, so animated layers snap to where they are now.", "Snapping memakai kotak layer pada frame saat ini, jadi layer beranimasi menempel ke posisinya saat ini."),
+        ),
+        IMG("snapping-anchor", "Anchor Point tool with snapping: the anchor sticks to the composition's centre line and to the middle of the underline.", "Tool Anchor Point dengan snapping: anchor menempel ke garis tengah komposisi dan ke tengah garis bawah.", shared=True),
+        TIP(
+            "To centre a logo exactly, drag it near the middle: its centre snaps to the composition's centre lines. The Align panel does the same with one click.",
+            "Untuk menengahkan logo dengan tepat, seret ke dekat tengah: titik tengahnya menempel ke garis tengah komposisi. Panel Align melakukan hal yang sama dengan sekali klik.",
         ),
     ]
 

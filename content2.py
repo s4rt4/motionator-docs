@@ -486,6 +486,7 @@ def build(doc, presets, shortcuts):
                 [B("Space + drag", "Space + seret"), B("Pan the canvas", "Geser canvas")],
                 [B("Ctrl/Alt + wheel", "Ctrl/Alt + roda"), B("Zoom the canvas around the pointer", "Zoom canvas di sekitar kursor")],
                 [B("Shift + drag", "Shift + seret"), B("Move only horizontally/vertically; rotate in 45° steps", "Gerak hanya horizontal/vertikal; putar per 45°")],
+                [B("Ctrl + drag", "Ctrl + seret"), B("Invert snapping for this drag (free move when Snapping is on)", "Membalik snapping untuk seretan ini (gerak bebas saat Snapping aktif)")],
                 [B("Double-click a preset", "Klik dua kali preset"), B("Apply it to the selected layer", "Terapkan ke layer terpilih")],
                 [B("Esc while dragging a panel", "Esc saat menyeret panel"), B("Cancel the move", "Batalkan pemindahan")],
             ],

@@ -244,7 +244,7 @@ def menu_reference(doc, G):
             ("Grid", k("Ctrl+'"), B("Shows a grid over the composition.", "Menampilkan grid di atas komposisi.")),
             (B("Transparency Grid", "Grid Transparansi"), "", B("Shows a chequerboard behind transparent compositions.", "Menampilkan kotak-kotak di belakang komposisi transparan.")),
             ("Safe Area", "", B("Shows action-safe and title-safe margins for video.", "Menampilkan margin action-safe dan title-safe untuk video.")),
-            ("Snapping", k("Ctrl+Shift+;"), B("The snapping switch (also in the toolbar). In this version dragging does not snap yet; the setting is kept for when it does.", "Sakelar snapping (juga ada di toolbar). Di versi ini menyeret belum menempel; pengaturannya disimpan untuk saat fitur itu hadir.")),
+            ("Snapping", k("Ctrl+Shift+;"), B("Turns snapping on or off (also in the toolbar): dragged layers and anchor points stick to the composition and to other layers. See Composition panel ▸ Snapping.", "Menyalakan atau mematikan snapping (juga ada di toolbar): layer dan anchor point yang diseret menempel ke komposisi dan layer lain. Lihat Panel Composition ▸ Snapping.")),
             (B("Zoom In / Out", "Perbesar / Perkecil"), k(".") + " " + k(","), B("Zooms the canvas.", "Memperbesar/memperkecil canvas.")),
             (B("Actual Size / Fit", "Ukuran Asli / Sesuaikan"), k("/") + " " + k("Shift+/"), B("100 % zoom, or fit the composition to the panel.", "Zoom 100 %, atau sesuaikan komposisi dengan panel.")),
         ]),
@@ -824,6 +824,7 @@ GLOSSARY = [
     ("Rest pose", "Pose diam", "How a layer looks in the original SVG.", "Tampilan layer di SVG aslinya."),
     ("Reveal", "Reveal", "An effect that shows part of a layer, wiping from a side or as an iris.", "Efek yang menampilkan sebagian layer, tersapu dari satu sisi atau seperti iris."),
     ("Safe area", "Safe area", "Margins inside which text and action stay visible on all screens.", "Margin yang menjamin teks dan aksi tetap terlihat di semua layar."),
+    ("Snapping", "Snapping", "Dragged layers and anchor points jumping onto the composition's and other layers' edges and centres when they come close.", "Layer dan anchor point yang diseret melompat menempel ke tepi dan tengah komposisi serta layer lain saat sudah dekat."),
     ("Stagger", "Stagger", "Applying a preset to several layers with a delay between them.", "Menerapkan preset ke beberapa layer dengan jeda di antaranya."),
     ("Stopwatch", "Stopwatch", "The clock icon that turns keyframes on for a property.", "Ikon jam yang mengaktifkan keyframe untuk suatu properti."),
     ("Tint", "Tint", "An effect that recolours a layer towards a chosen colour.", "Efek yang mewarnai ulang layer ke arah warna yang dipilih."),
@@ -841,6 +842,7 @@ def glossary(doc, G):
 
 
 FAQ_EXTRA = [
+    ("My layer jumps when I drag it slowly.", "Layer saya melompat saat diseret pelan.", "That is snapping: within 8 screen pixels of an edge or centre the layer sticks to it, and a magenta guide shows where. Hold [[Ctrl]] while dragging to move freely, or switch Snapping off in the toolbar.", "Itu snapping: dalam jarak 8 piksel layar dari tepi atau tengah, layer menempel ke sana dan garis magenta menunjukkan letaknya. Tahan [[Ctrl]] saat menyeret untuk bergerak bebas, atau matikan Snapping di toolbar."),
     ("Can I animate text without outlining it?", "Bisakah teks dianimasikan tanpa di-outline?", "Not yet: outline it in your design tool. Keep the editable original so you can change the wording later.", "Belum: outline teks di aplikasi desain. Simpan file asli yang masih bisa diedit agar kata-katanya bisa diubah nanti."),
     ("How do I animate each letter separately?", "Bagaimana menganimasikan setiap huruf terpisah?", "Give each letter its own id inside a named group (the social sample shows this), then apply a preset to the group with Stagger to child layers.", "Beri setiap huruf id sendiri di dalam grup bernama (contoh social menunjukkannya), lalu terapkan preset ke grup dengan Stagger ke anak layer."),
     ("My Exit preset appears at the start.", "Preset Exit saya muncul di awal.", "Exit presets are placed from the end of the composition. Check the composition duration and <i>Ends before the end</i> in the Properties panel (0 s = at the very end).", "Preset Exit diletakkan dari akhir komposisi. Periksa durasi komposisi dan <i>Selesai sebelum akhir</i> di panel Properties (0 s = tepat di akhir)."),
