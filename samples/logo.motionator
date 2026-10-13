@@ -1,0 +1,360 @@
+{
+  "version": 1,
+  "canvas": {
+    "name": "Logo Reveal",
+    "width": 1920,
+    "height": 1080,
+    "fps": [
+      30,
+      1
+    ],
+    "duration": 2822400000,
+    "background": {
+      "type": "solid",
+      "value": "#ffffff"
+    }
+  },
+  "assets": [
+    {
+      "id": "a1",
+      "name": "logo.svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"800\" height=\"450\" viewBox=\"0 0 800 450\">\n  <!-- Motionator sample: a line-art logo for the draw-on tutorial. Every part has an id, so\n       each becomes its own layer. Strokes (not fills) are what Trim Paths draws on. -->\n  <defs>\n    <linearGradient id=\"brand\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0\" stop-color=\"#F15A24\"/>\n      <stop offset=\"0.45\" stop-color=\"#FF0000\"/>\n      <stop offset=\"1\" stop-color=\"#662D91\"/>\n    </linearGradient>\n  </defs>\n  <g id=\"Mark\">\n    <circle id=\"Ring\" cx=\"230\" cy=\"225\" r=\"110\" fill=\"none\" stroke=\"url(#brand)\" stroke-width=\"16\" stroke-linecap=\"round\"/>\n    <path id=\"Wave\" d=\"M150 255 C 185 150, 215 150, 230 225 S 275 300, 310 195\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <circle id=\"Dot\" cx=\"310\" cy=\"160\" r=\"14\" fill=\"#FF0000\"/>\n  </g>\n  <g id=\"Wordmark\">\n    <path id=\"Letter_M\" d=\"M390 280 V170 L430 230 L470 170 V280\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <circle id=\"Letter_O\" cx=\"535\" cy=\"225\" r=\"52\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"14\"/>\n    <path id=\"Letter_V\" d=\"M610 172 L645 278 L680 172\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    <path id=\"Letter_E\" d=\"M760 172 H712 V278 H760 M712 225 H748\" fill=\"none\" stroke=\"#1f2937\" stroke-width=\"14\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  </g>\n  <rect id=\"Underline\" x=\"390\" y=\"310\" width=\"370\" height=\"10\" rx=\"5\" fill=\"url(#brand)\"/>\n</svg>\n",
+      "hash": "1aa63f7f7351b9ea"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a1",
+      "assetId": "a1",
+      "svgId": "",
+      "parent": null,
+      "label": "none",
+      "anchor": [
+        400.0,
+        225.0
+      ],
+      "base": {
+        "pos": [
+          960.0,
+          540.0
+        ],
+        "scale": [
+          2.1,
+          2.1
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Mark",
+      "assetId": "a1",
+      "svgId": "Mark",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        230.00000762939453,
+        225.00000762939453
+      ],
+      "base": {
+        "pos": [
+          230.00000762939453,
+          225.00000762939453
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Ring",
+      "assetId": "a1",
+      "svgId": "Ring",
+      "parent": "a1_Mark",
+      "label": "none",
+      "anchor": [
+        230.00000762939453,
+        225.00000762939453
+      ],
+      "base": {
+        "pos": [
+          230.00000762939453,
+          225.00000762939453
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Wave",
+      "assetId": "a1",
+      "svgId": "Wave",
+      "parent": "a1_Mark",
+      "label": "none",
+      "anchor": [
+        229.9999771118164,
+        225.00000762939453
+      ],
+      "base": {
+        "pos": [
+          229.9999771118164,
+          225.00000762939453
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Dot",
+      "assetId": "a1",
+      "svgId": "Dot",
+      "parent": "a1_Mark",
+      "label": "none",
+      "anchor": [
+        310.0,
+        160.0
+      ],
+      "base": {
+        "pos": [
+          310.0,
+          160.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Wordmark",
+      "assetId": "a1",
+      "svgId": "Wordmark",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        575.0,
+        224.99369049072266
+      ],
+      "base": {
+        "pos": [
+          575.0,
+          224.99369049072266
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Letter_M",
+      "assetId": "a1",
+      "svgId": "Letter_M",
+      "parent": "a1_Wordmark",
+      "label": "none",
+      "anchor": [
+        430.0,
+        224.99369049072266
+      ],
+      "base": {
+        "pos": [
+          430.0,
+          224.99369049072266
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Letter_O",
+      "assetId": "a1",
+      "svgId": "Letter_O",
+      "parent": "a1_Wordmark",
+      "label": "none",
+      "anchor": [
+        535.0,
+        225.0
+      ],
+      "base": {
+        "pos": [
+          535.0,
+          225.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Letter_V",
+      "assetId": "a1",
+      "svgId": "Letter_V",
+      "parent": "a1_Wordmark",
+      "label": "none",
+      "anchor": [
+        644.9999694824219,
+        224.99998474121094
+      ],
+      "base": {
+        "pos": [
+          644.9999694824219,
+          224.99998474121094
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Letter_E",
+      "assetId": "a1",
+      "svgId": "Letter_E",
+      "parent": "a1_Wordmark",
+      "label": "none",
+      "anchor": [
+        736.0,
+        225.0
+      ],
+      "base": {
+        "pos": [
+          736.0,
+          225.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Underline",
+      "assetId": "a1",
+      "svgId": "Underline",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        575.0,
+        315.0
+      ],
+      "base": {
+        "pos": [
+          575.0,
+          315.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    }
+  ],
+  "tracks": [],
+  "presetInstances": [
+    {
+      "id": "p1",
+      "preset": "enter.draw_on",
+      "order": 0,
+      "targets": [
+        "a1_Ring",
+        "a1_Wave"
+      ],
+      "start": 0,
+      "duration": 1058400000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {}
+    },
+    {
+      "id": "p2",
+      "preset": "enter.draw_on",
+      "order": 1,
+      "targets": [
+        "a1_Letter_M",
+        "a1_Letter_O",
+        "a1_Letter_V",
+        "a1_Letter_E"
+      ],
+      "start": 352800000,
+      "duration": 705600000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {},
+      "stagger": {
+        "step": 88200000,
+        "order": "index",
+        "seed": 1
+      }
+    },
+    {
+      "id": "p3",
+      "preset": "enter.scale_pop",
+      "order": 2,
+      "targets": [
+        "a1_Dot"
+      ],
+      "start": 987840000,
+      "duration": 423360000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {}
+    },
+    {
+      "id": "p4",
+      "preset": "enter.wipe",
+      "order": 3,
+      "targets": [
+        "a1_Underline"
+      ],
+      "start": 1270080000,
+      "duration": 564480000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {}
+    },
+    {
+      "id": "p5",
+      "preset": "emphasis.pop",
+      "order": 4,
+      "targets": [
+        "a1_Mark"
+      ],
+      "start": 2116800000,
+      "duration": 282240000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amount": 8.0
+      }
+    }
+  ],
+  "nextId": 6
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <!-- Motionator sample: a small web icon (paper plane) for keyframes, motion paths and the
+       Lottie / animated SVG exports. -->
+  <circle id="Badge" cx="256" cy="256" r="220" fill="#eef2ff"/>
+  <g id="Plane">
+    <path id="Plane_Body" d="M120 260 L390 140 L320 390 L250 300 Z" fill="#4f46e5"/>
+    <path id="Plane_Fold" d="M250 300 L390 140 L270 330 Z" fill="#3730a3"/>
+  </g>
+  <path id="Trail" d="M110 330 C 150 360, 180 360, 215 335" fill="none" stroke="#a5b4fc" stroke-width="12" stroke-linecap="round"/>
+</svg>

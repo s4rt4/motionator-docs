@@ -1,0 +1,502 @@
+{
+  "version": 1,
+  "canvas": {
+    "name": "Stock Background",
+    "width": 1920,
+    "height": 1080,
+    "fps": [
+      30,
+      1
+    ],
+    "duration": 7056000000,
+    "background": {
+      "type": "solid",
+      "value": "#1a1037"
+    }
+  },
+  "assets": [
+    {
+      "id": "a1",
+      "name": "background.svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1920\" height=\"1080\" viewBox=\"0 0 1920 1080\">\n  <!-- Motionator sample: shapes for a seamless 4K stock background (loop presets only). -->\n  <defs>\n    <linearGradient id=\"sky\" x1=\"0\" y1=\"0\" x2=\"1\" y2=\"1\">\n      <stop offset=\"0\" stop-color=\"#1a1037\"/>\n      <stop offset=\"1\" stop-color=\"#3b1450\"/>\n    </linearGradient>\n    <radialGradient id=\"glow\" cx=\"0.5\" cy=\"0.5\" r=\"0.5\">\n      <stop offset=\"0\" stop-color=\"#ff7a45\" stop-opacity=\"0.9\"/>\n      <stop offset=\"1\" stop-color=\"#ff7a45\" stop-opacity=\"0\"/>\n    </radialGradient>\n  </defs>\n  <rect id=\"Backdrop\" width=\"1920\" height=\"1080\" fill=\"url(#sky)\"/>\n  <circle id=\"Sun_Glow\" cx=\"1420\" cy=\"380\" r=\"300\" fill=\"url(#glow)\"/>\n  <circle id=\"Sun\" cx=\"1420\" cy=\"380\" r=\"120\" fill=\"#ff7a45\"/>\n  <g id=\"Bubbles\" fill=\"#ffffff\" fill-opacity=\"0.18\">\n    <circle id=\"Bubble_1\" cx=\"260\" cy=\"260\" r=\"70\"/>\n    <circle id=\"Bubble_2\" cx=\"520\" cy=\"760\" r=\"40\"/>\n    <circle id=\"Bubble_3\" cx=\"900\" cy=\"200\" r=\"55\"/>\n    <circle id=\"Bubble_4\" cx=\"1180\" cy=\"860\" r=\"85\"/>\n    <circle id=\"Bubble_5\" cx=\"1700\" cy=\"820\" r=\"45\"/>\n  </g>\n  <path id=\"Wave_Back\" d=\"M0 760 C 320 680, 640 840, 960 760 S 1600 680, 1920 760 V1080 H0Z\" fill=\"#7b2cbf\" fill-opacity=\"0.75\"/>\n  <path id=\"Wave_Front\" d=\"M0 860 C 320 800, 640 940, 960 860 S 1600 800, 1920 860 V1080 H0Z\" fill=\"#c9184a\"/>\n  <path id=\"Ribbon\" d=\"M140 520 C 520 380, 900 660, 1280 500 S 1760 420, 1840 540\" fill=\"none\" stroke=\"#ffd166\" stroke-width=\"10\" stroke-linecap=\"round\"/>\n</svg>\n",
+      "hash": "2a2985d8a1601562"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a1",
+      "assetId": "a1",
+      "svgId": "",
+      "parent": null,
+      "label": "none",
+      "anchor": [
+        960.0,
+        540.0
+      ],
+      "base": {
+        "pos": [
+          960.0,
+          540.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Backdrop",
+      "assetId": "a1",
+      "svgId": "Backdrop",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        960.0,
+        540.0
+      ],
+      "base": {
+        "pos": [
+          960.0,
+          540.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Sun_Glow",
+      "assetId": "a1",
+      "svgId": "Sun_Glow",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        1420.0,
+        380.0
+      ],
+      "base": {
+        "pos": [
+          1420.0,
+          380.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Sun",
+      "assetId": "a1",
+      "svgId": "Sun",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        1420.0,
+        380.0
+      ],
+      "base": {
+        "pos": [
+          1420.0,
+          380.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubbles",
+      "assetId": "a1",
+      "svgId": "Bubbles",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        967.5,
+        545.0
+      ],
+      "base": {
+        "pos": [
+          967.5,
+          545.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubble_1",
+      "assetId": "a1",
+      "svgId": "Bubble_1",
+      "parent": "a1_Bubbles",
+      "label": "none",
+      "anchor": [
+        260.0,
+        260.0
+      ],
+      "base": {
+        "pos": [
+          260.0,
+          260.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubble_2",
+      "assetId": "a1",
+      "svgId": "Bubble_2",
+      "parent": "a1_Bubbles",
+      "label": "none",
+      "anchor": [
+        520.0,
+        760.0
+      ],
+      "base": {
+        "pos": [
+          520.0,
+          760.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubble_3",
+      "assetId": "a1",
+      "svgId": "Bubble_3",
+      "parent": "a1_Bubbles",
+      "label": "none",
+      "anchor": [
+        900.0,
+        200.0
+      ],
+      "base": {
+        "pos": [
+          900.0,
+          200.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubble_4",
+      "assetId": "a1",
+      "svgId": "Bubble_4",
+      "parent": "a1_Bubbles",
+      "label": "none",
+      "anchor": [
+        1180.0,
+        860.0
+      ],
+      "base": {
+        "pos": [
+          1180.0,
+          860.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Bubble_5",
+      "assetId": "a1",
+      "svgId": "Bubble_5",
+      "parent": "a1_Bubbles",
+      "label": "none",
+      "anchor": [
+        1700.0,
+        820.0
+      ],
+      "base": {
+        "pos": [
+          1700.0,
+          820.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Wave_Back",
+      "assetId": "a1",
+      "svgId": "Wave_Back",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        960.0,
+        890.0
+      ],
+      "base": {
+        "pos": [
+          960.0,
+          890.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Wave_Front",
+      "assetId": "a1",
+      "svgId": "Wave_Front",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        960.0,
+        943.6174011230469
+      ],
+      "base": {
+        "pos": [
+          960.0,
+          943.6174011230469
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Ribbon",
+      "assetId": "a1",
+      "svgId": "Ribbon",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        989.9967803955078,
+        480.74945068359375
+      ],
+      "base": {
+        "pos": [
+          989.9967803955078,
+          480.74945068359375
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    }
+  ],
+  "tracks": [],
+  "presetInstances": [
+    {
+      "id": "p1",
+      "preset": "loop.pulse",
+      "order": 0,
+      "targets": [
+        "a1_Sun"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amount": 6.0,
+        "period": 5.0
+      }
+    },
+    {
+      "id": "p2",
+      "preset": "loop.glow",
+      "order": 1,
+      "targets": [
+        "a1_Sun_Glow"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "min": 45.0,
+        "period": 2.5
+      }
+    },
+    {
+      "id": "p3",
+      "preset": "loop.drift",
+      "order": 2,
+      "targets": [
+        "a1_Bubble_1"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 40.0,
+        "period": 5.0
+      }
+    },
+    {
+      "id": "p4",
+      "preset": "loop.drift",
+      "order": 3,
+      "targets": [
+        "a1_Bubble_2"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 40.0,
+        "period": 3.33
+      }
+    },
+    {
+      "id": "p5",
+      "preset": "loop.drift",
+      "order": 4,
+      "targets": [
+        "a1_Bubble_3"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 40.0,
+        "period": 2.5
+      }
+    },
+    {
+      "id": "p6",
+      "preset": "loop.drift",
+      "order": 5,
+      "targets": [
+        "a1_Bubble_4"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 40.0,
+        "period": 5.0
+      }
+    },
+    {
+      "id": "p7",
+      "preset": "loop.drift",
+      "order": 6,
+      "targets": [
+        "a1_Bubble_5"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 40.0,
+        "period": 3.33
+      }
+    },
+    {
+      "id": "p8",
+      "preset": "loop.sway",
+      "order": 7,
+      "targets": [
+        "a1_Wave_Back"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "angle": 3.0,
+        "period": 5.0
+      }
+    },
+    {
+      "id": "p9",
+      "preset": "loop.float",
+      "order": 8,
+      "targets": [
+        "a1_Wave_Front"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 14.0,
+        "period": 2.5
+      }
+    },
+    {
+      "id": "p10",
+      "preset": "loop.trace",
+      "order": 9,
+      "targets": [
+        "a1_Ribbon"
+      ],
+      "start": 0,
+      "duration": 7056000000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "length": 35.0,
+        "period": 5.0
+      }
+    }
+  ],
+  "audio": {
+    "path": "ambient.wav",
+    "name": "ambient.wav",
+    "length": 7056000000,
+    "start": 0,
+    "trimIn": 0,
+    "duration": 7056000000,
+    "fadeIn": 705600000,
+    "fadeOut": 705600000,
+    "gainDb": -3.0,
+    "muted": false
+  },
+  "nextId": 11
+}

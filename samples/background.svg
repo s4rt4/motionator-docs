@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <!-- Motionator sample: shapes for a seamless 4K stock background (loop presets only). -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a1037"/>
+      <stop offset="1" stop-color="#3b1450"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff7a45" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff7a45" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect id="Backdrop" width="1920" height="1080" fill="url(#sky)"/>
+  <circle id="Sun_Glow" cx="1420" cy="380" r="300" fill="url(#glow)"/>
+  <circle id="Sun" cx="1420" cy="380" r="120" fill="#ff7a45"/>
+  <g id="Bubbles" fill="#ffffff" fill-opacity="0.18">
+    <circle id="Bubble_1" cx="260" cy="260" r="70"/>
+    <circle id="Bubble_2" cx="520" cy="760" r="40"/>
+    <circle id="Bubble_3" cx="900" cy="200" r="55"/>
+    <circle id="Bubble_4" cx="1180" cy="860" r="85"/>
+    <circle id="Bubble_5" cx="1700" cy="820" r="45"/>
+  </g>
+  <path id="Wave_Back" d="M0 760 C 320 680, 640 840, 960 760 S 1600 680, 1920 760 V1080 H0Z" fill="#7b2cbf" fill-opacity="0.75"/>
+  <path id="Wave_Front" d="M0 860 C 320 800, 640 940, 960 860 S 1600 800, 1920 860 V1080 H0Z" fill="#c9184a"/>
+  <path id="Ribbon" d="M140 520 C 520 380, 900 660, 1280 500 S 1760 420, 1840 540" fill="none" stroke="#ffd166" stroke-width="10" stroke-linecap="round"/>
+</svg>

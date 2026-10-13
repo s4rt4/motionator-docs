@@ -1,0 +1,320 @@
+{
+  "version": 1,
+  "canvas": {
+    "name": "Web Icon",
+    "width": 1080,
+    "height": 1080,
+    "fps": [
+      30,
+      1
+    ],
+    "duration": 2116800000,
+    "background": {
+      "type": "transparent",
+      "value": "#000000"
+    }
+  },
+  "assets": [
+    {
+      "id": "a1",
+      "name": "icon.svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 512 512\">\n  <!-- Motionator sample: a small web icon (paper plane) for keyframes, motion paths and the\n       Lottie / animated SVG exports. -->\n  <circle id=\"Badge\" cx=\"256\" cy=\"256\" r=\"220\" fill=\"#eef2ff\"/>\n  <g id=\"Plane\">\n    <path id=\"Plane_Body\" d=\"M120 260 L390 140 L320 390 L250 300 Z\" fill=\"#4f46e5\"/>\n    <path id=\"Plane_Fold\" d=\"M250 300 L390 140 L270 330 Z\" fill=\"#3730a3\"/>\n  </g>\n  <path id=\"Trail\" d=\"M110 330 C 150 360, 180 360, 215 335\" fill=\"none\" stroke=\"#a5b4fc\" stroke-width=\"12\" stroke-linecap=\"round\"/>\n</svg>\n",
+      "hash": "2f2df934354d9003"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a1",
+      "assetId": "a1",
+      "svgId": "",
+      "parent": null,
+      "label": "none",
+      "anchor": [
+        256.0,
+        256.0
+      ],
+      "base": {
+        "pos": [
+          540.0,
+          540.0
+        ],
+        "scale": [
+          1.9,
+          1.9
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Badge",
+      "assetId": "a1",
+      "svgId": "Badge",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        256.0,
+        256.0
+      ],
+      "base": {
+        "pos": [
+          256.0,
+          256.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Plane",
+      "assetId": "a1",
+      "svgId": "Plane",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        255.0,
+        265.0
+      ],
+      "base": {
+        "pos": [
+          255.0,
+          265.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Plane_Body",
+      "assetId": "a1",
+      "svgId": "Plane_Body",
+      "parent": "a1_Plane",
+      "label": "none",
+      "anchor": [
+        255.0,
+        265.0
+      ],
+      "base": {
+        "pos": [
+          255.0,
+          265.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Plane_Fold",
+      "assetId": "a1",
+      "svgId": "Plane_Fold",
+      "parent": "a1_Plane",
+      "label": "none",
+      "anchor": [
+        320.0,
+        235.0
+      ],
+      "base": {
+        "pos": [
+          320.0,
+          235.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Trail",
+      "assetId": "a1",
+      "svgId": "Trail",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        162.50085067749023,
+        341.5790557861328
+      ],
+      "base": {
+        "pos": [
+          162.50085067749023,
+          341.5790557861328
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    }
+  ],
+  "tracks": [
+    {
+      "nodeId": "a1_Plane",
+      "prop": "pos.x",
+      "keys": [
+        {
+          "t": 0,
+          "v": 115.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 705600000,
+          "v": 285.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 1411200000,
+          "v": 255.0
+        }
+      ]
+    },
+    {
+      "nodeId": "a1_Plane",
+      "prop": "pos.y",
+      "keys": [
+        {
+          "t": 0,
+          "v": 385.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 705600000,
+          "v": 205.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 1411200000,
+          "v": 265.0
+        }
+      ]
+    },
+    {
+      "nodeId": "a1_Plane",
+      "prop": "rot",
+      "keys": [
+        {
+          "t": 0,
+          "v": -25.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 705600000,
+          "v": 10.0,
+          "ease": {
+            "type": "bezier",
+            "p": [
+              0.3333333333333333,
+              0.0,
+              0.6666666666666667,
+              1.0
+            ]
+          }
+        },
+        {
+          "t": 1411200000,
+          "v": 0.0
+        }
+      ]
+    }
+  ],
+  "presetInstances": [
+    {
+      "id": "p1",
+      "preset": "enter.scale_pop",
+      "order": 0,
+      "targets": [
+        "a1_Badge"
+      ],
+      "start": 0,
+      "duration": 423360000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {}
+    },
+    {
+      "id": "p2",
+      "preset": "enter.draw_on",
+      "order": 1,
+      "targets": [
+        "a1_Trail"
+      ],
+      "start": 705600000,
+      "duration": 705600000,
+      "anchorTo": "start",
+      "blend": "override",
+      "params": {}
+    },
+    {
+      "id": "p3",
+      "preset": "loop.hover",
+      "order": 2,
+      "targets": [
+        "a1_Badge"
+      ],
+      "start": 0,
+      "duration": 2116800000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amplitude": 6.0,
+        "period": 1.5
+      }
+    }
+  ],
+  "nextId": 4
+}
