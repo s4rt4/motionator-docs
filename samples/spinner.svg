@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <circle id="Track" cx="256" cy="256" r="170" fill="none" stroke="#e5e7eb" stroke-width="36"/>
+  <g id="Arcs" fill="none" stroke="#2563eb" stroke-width="36" stroke-linecap="round">
+    <path id="Arc_A" d="M256 86 A170 170 0 0 1 426 256"/>
+    <path id="Arc_B" d="M256 426 A170 170 0 0 1 86 256"/>
+  </g>
+  <circle id="Core" cx="256" cy="256" r="58" fill="#2563eb"/>
+</svg>

@@ -56,7 +56,9 @@
   const visibleText = (el) => {
     const clone = el.cloneNode(true);
     clone.querySelectorAll(`[lang]:not([lang="${lang}"])`).forEach((n) => n.remove());
-    clone.querySelectorAll("svg, script, style").forEach((n) => n.remove());
+    clone.querySelectorAll("svg, script, style, .anchor, .num").forEach((n) => n.remove());
+    // Block elements end a word: keep table cells and list items apart in the snippet.
+    clone.querySelectorAll("p, li, td, th, div, dt, dd, h3, h4, figcaption, .times span").forEach((n) => n.append(" "));
     return clone.textContent.replace(/\s+/g, " ").trim();
   };
   function buildIndex() {

@@ -1,0 +1,3562 @@
+[
+  {
+    "category": "enter",
+    "description": {
+      "en": "Fades in from transparent.",
+      "id": "Muncul dari transparan."
+    },
+    "duration": 0.6,
+    "id": "enter.fade",
+    "name": "Fade In",
+    "params": [
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Enters from the left.",
+      "id": "Masuk dari kiri."
+    },
+    "duration": 0.8,
+    "id": "enter.slide_left",
+    "name": "Slide In ←",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Enters from the right.",
+      "id": "Masuk dari kanan."
+    },
+    "duration": 0.8,
+    "id": "enter.slide_right",
+    "name": "Slide In →",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Rises from below.",
+      "id": "Naik dari bawah."
+    },
+    "duration": 0.8,
+    "id": "enter.slide_up",
+    "name": "Slide In ↑",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Comes down from above.",
+      "id": "Turun dari atas."
+    },
+    "duration": 0.8,
+    "id": "enter.slide_down",
+    "name": "Slide In ↓",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Grows from zero with a slight overshoot.",
+      "id": "Membesar dari nol dengan sedikit pantulan."
+    },
+    "duration": 0.6,
+    "id": "enter.scale_pop",
+    "name": "Scale Pop",
+    "params": [
+      {
+        "default": "easeOutBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Rotates in while fading in.",
+      "id": "Berputar masuk sambil muncul."
+    },
+    "duration": 0.8,
+    "id": "enter.rotate_in",
+    "name": "Rotate In",
+    "params": [
+      {
+        "default": -90.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 720.0,
+        "min": -720.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Fades out to transparent.",
+      "id": "Menghilang menjadi transparan."
+    },
+    "duration": 0.6,
+    "id": "exit.fade",
+    "name": "Fade Out",
+    "params": [
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Shrinks until it disappears.",
+      "id": "Mengecil sampai hilang."
+    },
+    "duration": 0.6,
+    "id": "exit.scale",
+    "name": "Scale Out",
+    "params": [
+      {
+        "default": "easeInBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Floats up and down continuously.",
+      "id": "Mengambang naik-turun terus-menerus."
+    },
+    "duration": null,
+    "id": "loop.float",
+    "name": "Float",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 500.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Grows and shrinks rhythmically.",
+      "id": "Membesar-mengecil berirama."
+    },
+    "duration": null,
+    "id": "loop.pulse",
+    "name": "Pulse",
+    "params": [
+      {
+        "default": 8.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 1.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Spins continuously.",
+      "id": "Berputar terus."
+    },
+    "duration": null,
+    "id": "loop.spin",
+    "name": "Spin",
+    "params": [
+      {
+        "default": 4.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Spin period",
+          "id": "Periode putaran"
+        },
+        "max": 60.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      },
+      {
+        "default": "cw",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "Direction",
+          "id": "Arah"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Clockwise",
+              "id": "Searah jarum jam"
+            },
+            "value": "cw"
+          },
+          {
+            "label": {
+              "en": "Counter-clockwise",
+              "id": "Berlawanan"
+            },
+            "value": "ccw"
+          }
+        ]
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Shakes left and right, then settles.",
+      "id": "Bergetar ke kiri-kanan lalu berhenti."
+    },
+    "duration": 0.6,
+    "id": "emphasis.shake",
+    "name": "Shake",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 8.0,
+        "key": "frequency",
+        "kind": "number",
+        "label": {
+          "en": "Frequency",
+          "id": "Frekuensi"
+        },
+        "max": 30.0,
+        "min": 1.0,
+        "step": 0.5,
+        "unit": "Hz"
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Drops from above and bounces.",
+      "id": "Jatuh dari atas lalu memantul."
+    },
+    "duration": 1.0,
+    "id": "enter.bounce_in",
+    "name": "Bounce In",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Grows with an elastic wobble.",
+      "id": "Membesar dengan goyangan elastis."
+    },
+    "duration": 1.0,
+    "id": "enter.elastic_pop",
+    "name": "Elastic Pop",
+    "params": [],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Falls from above, accelerating.",
+      "id": "Jatuh dari atas dengan percepatan."
+    },
+    "duration": 0.6,
+    "id": "enter.drop",
+    "name": "Drop",
+    "params": [
+      {
+        "default": 400.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Exits to the left.",
+      "id": "Keluar ke kiri."
+    },
+    "duration": 0.8,
+    "id": "exit.slide_left",
+    "name": "Slide Out ←",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Exits to the right.",
+      "id": "Keluar ke kanan."
+    },
+    "duration": 0.8,
+    "id": "exit.slide_right",
+    "name": "Slide Out →",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Exits upwards.",
+      "id": "Keluar ke atas."
+    },
+    "duration": 0.8,
+    "id": "exit.slide_up",
+    "name": "Slide Out ↑",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Exits downwards.",
+      "id": "Keluar ke bawah."
+    },
+    "duration": 0.8,
+    "id": "exit.slide_down",
+    "name": "Slide Out ↓",
+    "params": [
+      {
+        "default": 200.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "yes",
+        "key": "fade",
+        "kind": "choice",
+        "label": {
+          "en": "With fade",
+          "id": "Sambil fade"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Yes",
+              "id": "Ya"
+            },
+            "value": "yes"
+          },
+          {
+            "label": {
+              "en": "No",
+              "id": "Tidak"
+            },
+            "value": "no"
+          }
+        ]
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Rotates out while fading out.",
+      "id": "Berputar keluar sambil menghilang."
+    },
+    "duration": 0.8,
+    "id": "exit.rotate_out",
+    "name": "Rotate Out",
+    "params": [
+      {
+        "default": 90.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 720.0,
+        "min": -720.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Hops up, then falls out.",
+      "id": "Melompat kecil lalu jatuh keluar."
+    },
+    "duration": 0.9,
+    "id": "exit.bounce_out",
+    "name": "Bounce Out",
+    "params": [
+      {
+        "default": 400.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Swings like a pendulum (anchor = pivot).",
+      "id": "Berayun kiri-kanan seperti bandul (anchor = titik gantung)."
+    },
+    "duration": null,
+    "id": "loop.swing",
+    "name": "Swing",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 180.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Slowly grows and dims, like breathing.",
+      "id": "Membesar dan meredup pelan seperti bernapas."
+    },
+    "duration": null,
+    "id": "loop.breathe",
+    "name": "Breathe",
+    "params": [
+      {
+        "default": 4.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 15.0,
+        "key": "fade",
+        "kind": "number",
+        "label": {
+          "en": "Fade",
+          "id": "Redup"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 3.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Blinks briefly at a regular interval.",
+      "id": "Berkedip singkat secara berkala."
+    },
+    "duration": null,
+    "id": "loop.blink",
+    "name": "Blink",
+    "params": [
+      {
+        "default": 1.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Two quick beats.",
+      "id": "Dua denyut cepat."
+    },
+    "duration": 0.8,
+    "id": "emphasis.heartbeat",
+    "name": "Heartbeat",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Shrinks, grows while wobbling, then settles.",
+      "id": "Mengecil, membesar sambil bergoyang, lalu kembali."
+    },
+    "duration": 1.0,
+    "id": "emphasis.tada",
+    "name": "Tada",
+    "params": [],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Wobbles like jelly.",
+      "id": "Bergoyang lentur seperti jeli."
+    },
+    "duration": 0.9,
+    "id": "emphasis.jello",
+    "name": "Jello",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Smooth random motion (seeded, identical on every render).",
+      "id": "Gerak acak halus (ber-seed, hasil sama setiap render)."
+    },
+    "duration": 2.0,
+    "id": "emphasis.wiggle",
+    "name": "Wiggle",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 500.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 3.0,
+        "key": "rotation",
+        "kind": "number",
+        "label": {
+          "en": "Rotation",
+          "id": "Rotasi"
+        },
+        "max": 180.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": 4.0,
+        "key": "frequency",
+        "kind": "number",
+        "label": {
+          "en": "Frequency",
+          "id": "Frekuensi"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "Hz"
+      },
+      {
+        "default": 1.0,
+        "key": "seed",
+        "kind": "number",
+        "label": {
+          "en": "Seed",
+          "id": "Seed"
+        },
+        "max": 9999.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": ""
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Flashes a few times.",
+      "id": "Berkedip beberapa kali."
+    },
+    "duration": 0.8,
+    "id": "emphasis.flash",
+    "name": "Flash",
+    "params": [
+      {
+        "default": 2.0,
+        "key": "count",
+        "kind": "number",
+        "label": {
+          "en": "Count",
+          "id": "Jumlah"
+        },
+        "max": 10.0,
+        "min": 1.0,
+        "step": 1.0,
+        "unit": "×"
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Stretches and snaps back like rubber.",
+      "id": "Melar dan memantul seperti karet."
+    },
+    "duration": 1.0,
+    "id": "emphasis.rubber_band",
+    "name": "Rubber Band",
+    "params": [],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Comes in large and shrinks to size.",
+      "id": "Datang dari besar lalu mengecil ke ukurannya."
+    },
+    "duration": 0.7,
+    "id": "enter.zoom_in",
+    "name": "Zoom In",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "from",
+        "kind": "number",
+        "label": {
+          "en": "Start scale",
+          "id": "Skala awal"
+        },
+        "max": 1000.0,
+        "min": 100.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.175,
+      0.35,
+      0.5249999999999999,
+      0.7
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Flies in diagonally.",
+      "id": "Terbang masuk secara diagonal."
+    },
+    "duration": 0.8,
+    "id": "enter.fly_in",
+    "name": "Fly In",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "bl",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "From",
+          "id": "Dari"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Bottom left",
+              "id": "Kiri bawah"
+            },
+            "value": "bl"
+          },
+          {
+            "label": {
+              "en": "Bottom right",
+              "id": "Kanan bawah"
+            },
+            "value": "br"
+          },
+          {
+            "label": {
+              "en": "Top left",
+              "id": "Kiri atas"
+            },
+            "value": "tl"
+          },
+          {
+            "label": {
+              "en": "Top right",
+              "id": "Kanan atas"
+            },
+            "value": "tr"
+          }
+        ]
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Spins while growing from zero.",
+      "id": "Berputar sambil membesar dari nol."
+    },
+    "duration": 0.9,
+    "id": "enter.spiral_in",
+    "name": "Spiral In",
+    "params": [
+      {
+        "default": -360.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 1440.0,
+        "min": -1440.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Rolls in from the left.",
+      "id": "Menggelinding masuk dari kiri."
+    },
+    "duration": 0.9,
+    "id": "enter.roll_in",
+    "name": "Roll In",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 120.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 1440.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Flips in around the vertical axis (3D look).",
+      "id": "Membalik masuk pada sumbu horizontal (kesan 3D)."
+    },
+    "duration": 0.7,
+    "id": "enter.flip_in_x",
+    "name": "Flip In X",
+    "params": [
+      {
+        "default": "easeOutBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.175,
+      0.35,
+      0.5249999999999999,
+      0.7
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Flips in around the horizontal axis (3D look).",
+      "id": "Membalik masuk pada sumbu vertikal (kesan 3D)."
+    },
+    "duration": 0.7,
+    "id": "enter.flip_in_y",
+    "name": "Flip In Y",
+    "params": [
+      {
+        "default": "easeOutBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.175,
+      0.35,
+      0.5249999999999999,
+      0.7
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Pops up with a slight overshoot.",
+      "id": "Melompat naik dengan sedikit pantulan."
+    },
+    "duration": 0.6,
+    "id": "enter.pop_up",
+    "name": "Pop Up",
+    "params": [
+      {
+        "default": 80.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "easeOutBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Swings in and settles (put the anchor on the hinge).",
+      "id": "Berayun masuk lalu tenang (taruh anchor di titik engsel)."
+    },
+    "duration": 1.0,
+    "id": "enter.swing_in",
+    "name": "Swing In",
+    "params": [
+      {
+        "default": -60.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 180.0,
+        "min": -180.0,
+        "step": 1.0,
+        "unit": "°"
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Comes in stretched and springs into shape.",
+      "id": "Masuk memanjang lalu memantul ke bentuknya."
+    },
+    "duration": 0.9,
+    "id": "enter.stretch_in",
+    "name": "Stretch In",
+    "params": [],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Grows while fading out.",
+      "id": "Membesar sambil menghilang."
+    },
+    "duration": 0.6,
+    "id": "exit.zoom_out",
+    "name": "Zoom Out",
+    "params": [
+      {
+        "default": 250.0,
+        "key": "to",
+        "kind": "number",
+        "label": {
+          "en": "End scale",
+          "id": "Skala akhir"
+        },
+        "max": 1000.0,
+        "min": 100.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Flies out diagonally.",
+      "id": "Terbang keluar secara diagonal."
+    },
+    "duration": 0.8,
+    "id": "exit.fly_out",
+    "name": "Fly Out",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "tr",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "To",
+          "id": "Ke"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Bottom left",
+              "id": "Kiri bawah"
+            },
+            "value": "bl"
+          },
+          {
+            "label": {
+              "en": "Bottom right",
+              "id": "Kanan bawah"
+            },
+            "value": "br"
+          },
+          {
+            "label": {
+              "en": "Top left",
+              "id": "Kiri atas"
+            },
+            "value": "tl"
+          },
+          {
+            "label": {
+              "en": "Top right",
+              "id": "Kanan atas"
+            },
+            "value": "tr"
+          }
+        ]
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Spins while shrinking away.",
+      "id": "Berputar sambil mengecil sampai hilang."
+    },
+    "duration": 0.9,
+    "id": "exit.spiral_out",
+    "name": "Spiral Out",
+    "params": [
+      {
+        "default": 360.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 1440.0,
+        "min": -1440.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Rolls out to the right.",
+      "id": "Menggelinding keluar ke kanan."
+    },
+    "duration": 0.9,
+    "id": "exit.roll_out",
+    "name": "Roll Out",
+    "params": [
+      {
+        "default": 300.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 120.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 1440.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Flips out around the vertical axis.",
+      "id": "Membalik keluar pada sumbu horizontal."
+    },
+    "duration": 0.6,
+    "id": "exit.flip_out_x",
+    "name": "Flip Out X",
+    "params": [
+      {
+        "default": "easeInBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Flips out around the horizontal axis.",
+      "id": "Membalik keluar pada sumbu vertikal."
+    },
+    "duration": 0.6,
+    "id": "exit.flip_out_y",
+    "name": "Flip Out Y",
+    "params": [
+      {
+        "default": "easeInBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Sinks a little, shrinks and fades.",
+      "id": "Turun sedikit, mengecil, dan memudar."
+    },
+    "duration": 0.7,
+    "id": "exit.sink",
+    "name": "Sink",
+    "params": [
+      {
+        "default": 60.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.175,
+      0.35,
+      0.5249999999999999,
+      0.7
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Flattens to a line and disappears.",
+      "id": "Memipih ke garis lalu hilang."
+    },
+    "duration": 0.6,
+    "id": "exit.collapse",
+    "name": "Collapse",
+    "params": [
+      {
+        "default": "easeInBack",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Moves in a circle, starting and ending at its own position.",
+      "id": "Bergerak melingkar, mulai dan berakhir di posisinya."
+    },
+    "duration": null,
+    "id": "loop.orbit",
+    "name": "Orbit",
+    "params": [
+      {
+        "default": 30.0,
+        "key": "radius",
+        "kind": "number",
+        "label": {
+          "en": "Radius",
+          "id": "Jari-jari"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 3.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 60.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      },
+      {
+        "default": "cw",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "Direction",
+          "id": "Arah"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Clockwise",
+              "id": "Searah jarum jam"
+            },
+            "value": "cw"
+          },
+          {
+            "label": {
+              "en": "Counter-clockwise",
+              "id": "Berlawanan"
+            },
+            "value": "ccw"
+          }
+        ]
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Moves along a figure eight.",
+      "id": "Bergerak membentuk angka delapan."
+    },
+    "duration": null,
+    "id": "loop.figure8",
+    "name": "Figure 8",
+    "params": [
+      {
+        "default": 30.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 4.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 60.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Hops in place with squash and stretch.",
+      "id": "Melompat di tempat dengan squash & stretch."
+    },
+    "duration": null,
+    "id": "loop.bounce",
+    "name": "Bounce",
+    "params": [
+      {
+        "default": 40.0,
+        "key": "height",
+        "kind": "number",
+        "label": {
+          "en": "Height",
+          "id": "Tinggi"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 15.0,
+        "key": "squash",
+        "kind": "number",
+        "label": {
+          "en": "Squash",
+          "id": "Squash"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 1.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Wobbles and stretches gently, continuously.",
+      "id": "Bergoyang dan melar pelan terus-menerus."
+    },
+    "duration": null,
+    "id": "loop.wobble",
+    "name": "Wobble",
+    "params": [
+      {
+        "default": 6.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 90.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": 5.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Dims and brightens rhythmically.",
+      "id": "Meredup dan menyala berirama."
+    },
+    "duration": null,
+    "id": "loop.glow",
+    "name": "Glow",
+    "params": [
+      {
+        "default": 40.0,
+        "key": "min",
+        "kind": "number",
+        "label": {
+          "en": "Lowest opacity",
+          "id": "Opacity terendah"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Drifts slowly and irregularly, still seamless when looped.",
+      "id": "Melayang pelan tak beraturan, tetap mulus saat diulang."
+    },
+    "duration": null,
+    "id": "loop.drift",
+    "name": "Drift",
+    "params": [
+      {
+        "default": 20.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 3.0,
+        "key": "rotation",
+        "kind": "number",
+        "label": {
+          "en": "Rotation",
+          "id": "Rotasi"
+        },
+        "max": 90.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": 6.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 60.0,
+        "min": 0.5,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Hovers up and down with a slight tilt.",
+      "id": "Melayang naik-turun sambil sedikit miring."
+    },
+    "duration": null,
+    "id": "loop.hover",
+    "name": "Hover",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 500.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 3.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Tilt",
+          "id": "Kemiringan"
+        },
+        "max": 45.0,
+        "min": 0.0,
+        "step": 0.5,
+        "unit": "°"
+      },
+      {
+        "default": 3.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Rotates in steps like a clock hand.",
+      "id": "Berputar per langkah seperti jarum jam."
+    },
+    "duration": null,
+    "id": "loop.tick",
+    "name": "Tick",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "steps",
+        "kind": "number",
+        "label": {
+          "en": "Steps per turn",
+          "id": "Langkah per putaran"
+        },
+        "max": 120.0,
+        "min": 2.0,
+        "step": 1.0,
+        "unit": ""
+      },
+      {
+        "default": 12.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Spin period",
+          "id": "Periode putaran"
+        },
+        "max": 120.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Shakes its head, like saying no.",
+      "id": "Menggeleng seperti berkata tidak."
+    },
+    "duration": 1.0,
+    "id": "emphasis.head_shake",
+    "name": "Head Shake",
+    "params": [
+      {
+        "default": 12.0,
+        "key": "amplitude",
+        "kind": "number",
+        "label": {
+          "en": "Amplitude",
+          "id": "Amplitudo"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Nods twice.",
+      "id": "Mengangguk dua kali."
+    },
+    "duration": 0.9,
+    "id": "emphasis.nod",
+    "name": "Nod",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Spins full turns, then stops.",
+      "id": "Berputar penuh lalu berhenti."
+    },
+    "duration": 0.8,
+    "id": "emphasis.spin",
+    "name": "Spin",
+    "params": [
+      {
+        "default": 1.0,
+        "key": "turns",
+        "kind": "number",
+        "label": {
+          "en": "Turns",
+          "id": "Putaran"
+        },
+        "max": 10.0,
+        "min": 1.0,
+        "step": 1.0,
+        "unit": "×"
+      },
+      {
+        "default": "cw",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "Direction",
+          "id": "Arah"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Clockwise",
+              "id": "Searah jarum jam"
+            },
+            "value": "cw"
+          },
+          {
+            "label": {
+              "en": "Counter-clockwise",
+              "id": "Berlawanan"
+            },
+            "value": "ccw"
+          }
+        ]
+      },
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Flips over horizontally once.",
+      "id": "Membalik horizontal satu kali."
+    },
+    "duration": 0.8,
+    "id": "emphasis.flip",
+    "name": "Flip",
+    "params": [
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Grows for a moment, then returns.",
+      "id": "Membesar sekejap lalu kembali."
+    },
+    "duration": 0.4,
+    "id": "emphasis.pop",
+    "name": "Pop",
+    "params": [
+      {
+        "default": 20.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      }
+    ],
+    "times": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Squashes, then springs back.",
+      "id": "Memipih lalu memantul kembali."
+    },
+    "duration": 0.8,
+    "id": "emphasis.squash",
+    "name": "Squash",
+    "params": [
+      {
+        "default": 25.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Amount",
+          "id": "Besar"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Nudges aside, then returns.",
+      "id": "Bergeser sedikit lalu kembali."
+    },
+    "duration": 0.6,
+    "id": "emphasis.nudge",
+    "name": "Nudge",
+    "params": [
+      {
+        "default": 20.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 500.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "right",
+        "key": "direction",
+        "kind": "choice",
+        "label": {
+          "en": "Direction",
+          "id": "Arah"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "Right",
+              "id": "Kanan"
+            },
+            "value": "right"
+          },
+          {
+            "label": {
+              "en": "Left",
+              "id": "Kiri"
+            },
+            "value": "left"
+          },
+          {
+            "label": {
+              "en": "Up",
+              "id": "Atas"
+            },
+            "value": "up"
+          },
+          {
+            "label": {
+              "en": "Down",
+              "id": "Bawah"
+            },
+            "value": "down"
+          }
+        ]
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Swings a few times, then rests (anchor = pivot).",
+      "id": "Berayun beberapa kali lalu diam (anchor = titik gantung)."
+    },
+    "duration": 1.0,
+    "id": "emphasis.swing",
+    "name": "Swing",
+    "params": [
+      {
+        "default": 15.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Angle",
+          "id": "Sudut"
+        },
+        "max": 90.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Strokes draw on from the start of each path to its end (needs a stroke).",
+      "id": "Garis tergambar dari awal sampai akhir path (butuh stroke)."
+    },
+    "duration": 1.2,
+    "id": "enter.draw_on",
+    "name": "Draw On",
+    "params": [
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.3,
+      0.6,
+      0.8999999999999999,
+      1.2
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Strokes draw out from the middle of each path to both ends (needs a stroke).",
+      "id": "Garis tergambar dari tengah path ke kedua ujung (butuh stroke)."
+    },
+    "duration": 1.2,
+    "id": "enter.draw_center",
+    "name": "Draw From Centre",
+    "params": [
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.3,
+      0.6,
+      0.8999999999999999,
+      1.2
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Strokes erase from the start of each path to its end (needs a stroke).",
+      "id": "Garis terhapus dari awal sampai akhir path (butuh stroke)."
+    },
+    "duration": 1.0,
+    "id": "exit.draw_off",
+    "name": "Draw Off",
+    "params": [
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "A segment of the stroke travels along each path continuously (needs a stroke).",
+      "id": "Potongan garis berjalan mengelilingi path terus-menerus (butuh stroke)."
+    },
+    "duration": null,
+    "id": "loop.trace",
+    "name": "Trace",
+    "params": [
+      {
+        "default": 25.0,
+        "key": "length",
+        "kind": "number",
+        "label": {
+          "en": "Length",
+          "id": "Panjang"
+        },
+        "max": 99.0,
+        "min": 1.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 60.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Comes into focus from a blur.",
+      "id": "Muncul dari kabur menjadi tajam."
+    },
+    "duration": 0.8,
+    "id": "enter.blur_in",
+    "name": "Blur In",
+    "params": [
+      {
+        "default": 24.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Blur",
+          "id": "Kabur"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Blurs away while fading out.",
+      "id": "Menjadi kabur sambil menghilang."
+    },
+    "duration": 0.8,
+    "id": "exit.blur_out",
+    "name": "Blur Out",
+    "params": [
+      {
+        "default": 24.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Blur",
+          "id": "Kabur"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Blurs for a moment, then sharpens again.",
+      "id": "Kabur sesaat lalu tajam kembali."
+    },
+    "duration": 0.8,
+    "id": "emphasis.focus",
+    "name": "Focus Pulse",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Blur",
+          "id": "Kabur"
+        },
+        "max": 200.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Slides in slanted, then straightens.",
+      "id": "Meluncur masuk miring lalu tegak."
+    },
+    "duration": 0.8,
+    "id": "enter.shear_in",
+    "name": "Shear In",
+    "params": [
+      {
+        "default": 240.0,
+        "key": "distance",
+        "kind": "number",
+        "label": {
+          "en": "Distance",
+          "id": "Jarak"
+        },
+        "max": 4000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      },
+      {
+        "default": 30.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Slant",
+          "id": "Kemiringan"
+        },
+        "max": 80.0,
+        "min": -80.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Leans to one side, then springs back.",
+      "id": "Condong ke samping lalu kembali dengan pantulan."
+    },
+    "duration": 0.9,
+    "id": "emphasis.lean",
+    "name": "Lean",
+    "params": [
+      {
+        "default": 18.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Slant",
+          "id": "Kemiringan"
+        },
+        "max": 80.0,
+        "min": -80.0,
+        "step": 1.0,
+        "unit": "°"
+      }
+    ],
+    "times": [
+      0.0,
+      0.225,
+      0.45,
+      0.675,
+      0.9
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "Sways from side to side like in the wind.",
+      "id": "Bergoyang miring kiri-kanan seperti tertiup angin."
+    },
+    "duration": null,
+    "id": "loop.sway",
+    "name": "Sway",
+    "params": [
+      {
+        "default": 10.0,
+        "key": "angle",
+        "kind": "number",
+        "label": {
+          "en": "Slant",
+          "id": "Kemiringan"
+        },
+        "max": 80.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "°"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Wipes on from one side.",
+      "id": "Tersapu masuk dari satu sisi."
+    },
+    "duration": 0.8,
+    "id": "enter.wipe",
+    "name": "Wipe In",
+    "params": [
+      {
+        "default": "left",
+        "key": "from",
+        "kind": "choice",
+        "label": {
+          "en": "From",
+          "id": "Dari"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "From the left",
+              "id": "Dari kiri"
+            },
+            "value": "left"
+          },
+          {
+            "label": {
+              "en": "From the right",
+              "id": "Dari kanan"
+            },
+            "value": "right"
+          },
+          {
+            "label": {
+              "en": "From the top",
+              "id": "Dari atas"
+            },
+            "value": "top"
+          },
+          {
+            "label": {
+              "en": "From the bottom",
+              "id": "Dari bawah"
+            },
+            "value": "bottom"
+          }
+        ]
+      },
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Wipes off towards one side.",
+      "id": "Tersapu hilang ke satu sisi."
+    },
+    "duration": 0.8,
+    "id": "exit.wipe",
+    "name": "Wipe Out",
+    "params": [
+      {
+        "default": "left",
+        "key": "from",
+        "kind": "choice",
+        "label": {
+          "en": "From",
+          "id": "Dari"
+        },
+        "options": [
+          {
+            "label": {
+              "en": "From the left",
+              "id": "Dari kiri"
+            },
+            "value": "left"
+          },
+          {
+            "label": {
+              "en": "From the right",
+              "id": "Dari kanan"
+            },
+            "value": "right"
+          },
+          {
+            "label": {
+              "en": "From the top",
+              "id": "Dari atas"
+            },
+            "value": "top"
+          },
+          {
+            "label": {
+              "en": "From the bottom",
+              "id": "Dari bawah"
+            },
+            "value": "bottom"
+          }
+        ]
+      },
+      {
+        "default": "easeInOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Opens from a small circle in the middle.",
+      "id": "Terbuka dari lingkaran kecil di tengah."
+    },
+    "duration": 0.8,
+    "id": "enter.iris",
+    "name": "Iris In",
+    "params": [
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "exit",
+    "description": {
+      "en": "Closes to a circle in the middle.",
+      "id": "Menutup ke lingkaran di tengah."
+    },
+    "duration": 0.8,
+    "id": "exit.iris",
+    "name": "Iris Out",
+    "params": [
+      {
+        "default": "easeInCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "enter",
+    "description": {
+      "en": "Opens from the centre line out to both sides.",
+      "id": "Terbuka dari garis tengah ke kedua sisi."
+    },
+    "duration": 0.8,
+    "id": "enter.split",
+    "name": "Split Reveal",
+    "params": [
+      {
+        "default": "easeOutCubic",
+        "key": "ease",
+        "kind": "ease",
+        "label": {
+          "en": "Easing",
+          "id": "Easing"
+        }
+      }
+    ],
+    "times": [
+      0.0,
+      0.2,
+      0.4,
+      0.6000000000000001,
+      0.8
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Flashes a colour for a moment, then returns.",
+      "id": "Berubah warna sesaat lalu kembali."
+    },
+    "duration": 0.6,
+    "id": "emphasis.color_flash",
+    "name": "Color Flash",
+    "params": [
+      {
+        "default": "#ffffff",
+        "key": "color",
+        "kind": "color",
+        "label": {
+          "en": "Colour",
+          "id": "Warna"
+        }
+      },
+      {
+        "default": 100.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Strength",
+          "id": "Kekuatan"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      }
+    ],
+    "times": [
+      0.0,
+      0.15,
+      0.3,
+      0.44999999999999996,
+      0.6
+    ]
+  },
+  {
+    "category": "loop",
+    "description": {
+      "en": "A colour pulses in and out continuously.",
+      "id": "Warna berdenyut keluar-masuk terus-menerus."
+    },
+    "duration": null,
+    "id": "loop.tint_pulse",
+    "name": "Tint Pulse",
+    "params": [
+      {
+        "default": "#ffd54a",
+        "key": "color",
+        "kind": "color",
+        "label": {
+          "en": "Colour",
+          "id": "Warna"
+        }
+      },
+      {
+        "default": 60.0,
+        "key": "amount",
+        "kind": "number",
+        "label": {
+          "en": "Strength",
+          "id": "Kekuatan"
+        },
+        "max": 100.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "%"
+      },
+      {
+        "default": 2.0,
+        "key": "period",
+        "kind": "number",
+        "label": {
+          "en": "Period",
+          "id": "Periode"
+        },
+        "max": 30.0,
+        "min": 0.1,
+        "step": 0.1,
+        "unit": "s"
+      }
+    ],
+    "times": [
+      0.0,
+      0.5,
+      1.0,
+      1.5,
+      2.0
+    ]
+  },
+  {
+    "category": "emphasis",
+    "description": {
+      "en": "Jumps twice, the second one lower.",
+      "id": "Melompat dua kali, yang kedua lebih rendah."
+    },
+    "duration": 1.0,
+    "id": "emphasis.jump",
+    "name": "Jump",
+    "params": [
+      {
+        "default": 30.0,
+        "key": "height",
+        "kind": "number",
+        "label": {
+          "en": "Height",
+          "id": "Tinggi"
+        },
+        "max": 2000.0,
+        "min": 0.0,
+        "step": 1.0,
+        "unit": "px"
+      }
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ]
+  }
+]

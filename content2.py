@@ -1,5 +1,6 @@
 """Guide content, part 2: animating, export, guides and reference."""
 from build import B, CARDS, CODE, DIAGRAM, H3, H4, IMG, LEGEND, NOTE, P, RAW, STEPS, STRIP, TABLE, TIP, UL, WARN, kbd
+import content3
 from content import G_ANIM, G_OUT, G_REF, svg_blend, svg_easing, svg_loop, svg_stagger, svg_trim
 
 YES = '<span class="tag yes">✓</span>'
@@ -48,8 +49,8 @@ def build(doc, presets, shortcuts):
         ),
         DIAGRAM(svg_stagger(["In order", "Reverse", "From centre", "Random"]), svg_stagger(["Berurutan", "Terbalik", "Dari tengah", "Acak"])),
         P(
-            "The letters of the logo sample use stagger: <i>Pop Up</i> on the group <code>Wordmark</code> with 0.08 s between letters. Random order is seeded, so it is the same on every render.",
-            "Huruf-huruf pada contoh logo memakai stagger: <i>Pop Up</i> pada grup <code>Wordmark</code> dengan jeda 0,08 s antarhuruf. Urutan acak memakai seed, jadi hasilnya sama di setiap render.",
+            "The letters of the logo sample use stagger: <i>Draw On</i> on the group <code>Wordmark</code> with 0.125 s between letters. Random order is seeded, so it is the same on every render.",
+            "Huruf-huruf pada contoh logo memakai stagger: <i>Draw On</i> pada grup <code>Wordmark</code> dengan jeda 0,125 s antarhuruf. Urutan acak memakai seed, jadi hasilnya sama di setiap render.",
         ),
         H3("combining-presets", "Combining presets", "Menggabungkan preset"),
         DIAGRAM(
@@ -82,6 +83,8 @@ def build(doc, presets, shortcuts):
             "Preset bertanda <i>butuh stroke</i> (Draw On, Draw From Centre, Draw Off, Trace) menganimasikan Trim Paths dan hanya terlihat pada path yang punya stroke.",
         )
     )
+
+    content3.preset_reference(doc, G_ANIM, {n: content3.pretty(n) for n, _ in content3.easing_names()})
 
     # ============================================================ keyframes
     s = doc.section("keyframes", G_ANIM, B("Keyframes and easing", "Keyframe dan easing"), B("Full control: set values at moments in time and Motionator fills in the frames between.", "Kontrol penuh: tentukan nilai pada titik waktu tertentu dan Motionator mengisi frame di antaranya."))
@@ -120,6 +123,8 @@ def build(doc, presets, shortcuts):
             "Untuk kontrol lebih halus, bentuk kurvanya di Graph Editor.",
         ),
     ]
+
+    content3.easing_reference(doc, G_ANIM)
 
     # ============================================================ graph editor
     s = doc.section("graph-editor", G_ANIM, B("Graph Editor", "Graph Editor"), B("See and shape the timing of keyframes as curves.", "Lihat dan bentuk timing keyframe sebagai kurva."))
@@ -253,6 +258,8 @@ def build(doc, presets, shortcuts):
         ),
     ]
 
+    content3.principles(doc, G_ANIM)
+
     # ============================================================ render queue
     s = doc.section("video-export", G_OUT, B("Video export: Render Queue", "Ekspor video: Render Queue"), B("Render one composition to several formats and sizes in one go.", "Render satu komposisi ke beberapa format dan ukuran sekaligus."))
     s += [
@@ -367,6 +374,9 @@ def build(doc, presets, shortcuts):
         ),
     ]
 
+    content3.web_integration(doc, G_OUT)
+    content3.microstock(doc, G_OUT)
+
     # ============================================================ projects
     s = doc.section("projects", G_OUT, B("Projects, auto-save and recovery", "Proyek, auto-save, dan pemulihan"))
     s += [
@@ -386,11 +396,12 @@ def build(doc, presets, shortcuts):
         STEPS(
             ("<b>New project.</b> Press [[Ctrl+K]]: 1920×1080, 30 fps, 4 s, white background.", "<b>Proyek baru.</b> Tekan [[Ctrl+K]]: 1920×1080, 30 fps, 4 s, background putih."),
             ("<b>Import</b> <code>logo.svg</code> [[Ctrl+I]]. The layers are <code>Mark</code> (Ring, Wave, Dot), <code>Wordmark</code> (the letters) and <code>Underline</code>.", "<b>Impor</b> <code>logo.svg</code> [[Ctrl+I]]. Layer-nya adalah <code>Mark</code> (Ring, Wave, Dot), <code>Wordmark</code> (huruf-huruf), dan <code>Underline</code>."),
-            ("<b>Draw the mark.</b> At 0 s select <code>Ring</code> and apply <i>Draw On</i>. Select <code>Wave</code>, move the playhead to 0.3 s and apply <i>Draw On</i> again.", "<b>Gambar logonya.</b> Di 0 s pilih <code>Ring</code> lalu terapkan <i>Draw On</i>. Pilih <code>Wave</code>, pindahkan playhead ke 0,3 s lalu terapkan <i>Draw On</i> lagi."),
-            ("<b>Pop the dot.</b> At 0.9 s select <code>Dot</code> and apply <i>Elastic Pop</i>.", "<b>Munculkan titik.</b> Di 0,9 s pilih <code>Dot</code> lalu terapkan <i>Elastic Pop</i>."),
-            ("<b>Stagger the letters.</b> Tick <i>Stagger to child layers</i> (0.08 s, In order). At 1.0 s select <code>Wordmark</code> and apply <i>Pop Up</i>.", "<b>Munculkan huruf bergantian.</b> Centang <i>Stagger ke anak layer</i> (0,08 s, Berurutan). Di 1,0 s pilih <code>Wordmark</code> lalu terapkan <i>Pop Up</i>."),
-            ("<b>Wipe the underline.</b> At 1.6 s select <code>Underline</code> and apply <i>Wipe In</i>; set <i>From</i> to the left.", "<b>Sapu garis bawah.</b> Di 1,6 s pilih <code>Underline</code> lalu terapkan <i>Wipe In</i>; atur <i>Dari</i> ke kiri."),
-            ("<b>Accent.</b> At 3.0 s select <code>Mark</code> and apply <i>Pop</i>.", "<b>Aksen.</b> Di 3,0 s pilih <code>Mark</code> lalu terapkan <i>Pop</i>."),
+            ("<b>Make it bigger.</b> Select the root layer <code>logo.svg</code> and set Scale to 210 %: vectors stay sharp.", "<b>Perbesar.</b> Pilih layer root <code>logo.svg</code> lalu atur Scale ke 210 %: vektor tetap tajam."),
+            ("<b>Draw the mark.</b> At 0 s select <code>Ring</code> and apply <i>Draw On</i>, then do the same for <code>Wave</code>. In the Properties panel set each Duration to 1.5 s.", "<b>Gambar logonya.</b> Di 0 s pilih <code>Ring</code> lalu terapkan <i>Draw On</i>, lalu lakukan hal yang sama untuk <code>Wave</code>. Di panel Properties atur Durasi masing-masing ke 1,5 s."),
+            ("<b>Write the letters one by one.</b> Tick <i>Stagger to child layers</i> with 0.125 s, In order. Move the playhead to 0.5 s, select <code>Wordmark</code> and apply <i>Draw On</i>: each letter draws a little after the previous one. Untick stagger afterwards.", "<b>Tulis huruf satu per satu.</b> Centang <i>Stagger ke anak layer</i> dengan 0,125 s, Berurutan. Pindahkan playhead ke 0,5 s, pilih <code>Wordmark</code> lalu terapkan <i>Draw On</i>: setiap huruf tergambar sedikit setelah huruf sebelumnya. Matikan stagger setelahnya."),
+            ("<b>Pop the dot.</b> At 1.4 s select <code>Dot</code> and apply <i>Scale Pop</i>.", "<b>Munculkan titik.</b> Di 1,4 s pilih <code>Dot</code> lalu terapkan <i>Scale Pop</i>."),
+            ("<b>Wipe the underline.</b> At 1.8 s select <code>Underline</code> and apply <i>Wipe In</i> (From the left).", "<b>Sapu garis bawah.</b> Di 1,8 s pilih <code>Underline</code> lalu terapkan <i>Wipe In</i> (Dari kiri)."),
+            ("<b>Accent.</b> At 3.0 s select <code>Mark</code> and apply <i>Pop</i>; lower Amount to 8 % for a subtle beat.", "<b>Aksen.</b> Di 3,0 s pilih <code>Mark</code> lalu terapkan <i>Pop</i>; turunkan Amount ke 8 % agar ketukannya halus."),
             ("<b>Sound.</b> Import a short whoosh or chime with [[Ctrl+Alt+I]] and line it up with the Pop using the waveform.", "<b>Suara.</b> Impor efek whoosh atau chime pendek dengan [[Ctrl+Alt+I]] dan sejajarkan dengan Pop memakai waveform."),
             ("<b>Export.</b> MP4 for social media; for the website, <b>Export Animated SVG</b> without Loop so it stops on the finished logo.", "<b>Ekspor.</b> MP4 untuk media sosial; untuk website, <b>Ekspor SVG Animasi</b> tanpa Loop supaya berhenti di logo yang utuh."),
         ),
@@ -404,11 +415,22 @@ def build(doc, presets, shortcuts):
         STEPS(
             ("<b>Composition.</b> [[Ctrl+K]]: 3840×2160 (or 1920×1080, Motionator scales up sharply), 30 fps, <b>10 s</b>.", "<b>Komposisi.</b> [[Ctrl+K]]: 3840×2160 (atau 1920×1080, Motionator memperbesar dengan tajam), 30 fps, <b>10 s</b>."),
             ("<b>Import</b> <code>background.svg</code>: Backdrop, Sun_Glow, Sun, Bubbles (Bubble_1–5), Wave_Back, Wave_Front, Ribbon.", "<b>Impor</b> <code>background.svg</code>: Backdrop, Sun_Glow, Sun, Bubbles (Bubble_1–5), Wave_Back, Wave_Front, Ribbon."),
-            ("<b>Use only Loop presets</b> so the end matches the start: <i>Glow</i> on Sun_Glow, <i>Pulse</i> on Sun, <i>Sway</i> on the waves, <i>Drift</i> with stagger on Bubbles, <i>Trace</i> on Ribbon.", "<b>Pakai preset Loop saja</b> supaya akhir sama dengan awal: <i>Glow</i> pada Sun_Glow, <i>Pulse</i> pada Sun, <i>Sway</i> pada gelombang, <i>Drift</i> dengan stagger pada Bubbles, <i>Trace</i> pada Ribbon."),
-            ("<b>Make periods divide the duration.</b> In a 10 s clip, use periods of 10, 5, 2.5 or 2 s so every cycle completes exactly at the end.", "<b>Buat periode habis membagi durasi.</b> Pada klip 10 s, pakai periode 10, 5, 2,5, atau 2 s supaya setiap siklus selesai tepat di akhir."),
+            ("<b>Use only Loop presets</b> so the end matches the start. The sample uses the settings in the table below.", "<b>Pakai preset Loop saja</b> supaya akhir sama dengan awal. Contoh ini memakai pengaturan di tabel bawah."),
+            ("<b>Make periods divide the duration.</b> In a 10 s clip, use periods of 10, 5, 2.5 or 2 s so every cycle completes exactly at the end. The bubbles use 5, 3.33 and 2.5 s so they never move in step (10 ÷ 3.33 = 3 cycles).", "<b>Buat periode habis membagi durasi.</b> Pada klip 10 s, pakai periode 10, 5, 2,5, atau 2 s supaya setiap siklus selesai tepat di akhir. Gelembung memakai 5, 3,33, dan 2,5 s supaya tidak bergerak serempak (10 ÷ 3,33 = 3 siklus)."),
             ("<b>Audio (optional).</b> Import <code>ambient.wav</code>; set Fade in and Fade out to 1 s. Many stock sites prefer clips without sound, so you can also mute it for the upload.", "<b>Audio (opsional).</b> Impor <code>ambient.wav</code>; atur Fade in dan Fade out 1 s. Banyak situs stok lebih suka klip tanpa suara, jadi bisa juga dibisukan saat unggah."),
             ("<b>Check the loop.</b> [[Ctrl+M]], then <b>Check loop</b> in the Render Queue. It should say <i>Seamless</i>.", "<b>Cek loop.</b> [[Ctrl+M]], lalu <b>Cek loop</b> di Render Queue. Hasilnya harus <i>Loop mulus</i>."),
             ("<b>Render.</b> Choose <i>Microstock 4K · H.264</i> and, if the site accepts it, <i>Microstock 4K · ProRes 422 HQ</i>. Fix any yellow warning, then Render.", "<b>Render.</b> Pilih <i>Microstock 4K · H.264</i> dan, bila situs menerimanya, <i>Microstock 4K · ProRes 422 HQ</i>. Perbaiki peringatan kuning bila ada, lalu Render."),
+        ),
+        TABLE(
+            [B("Layer", "Layer"), B("Preset", "Preset"), B("Settings", "Pengaturan")],
+            [
+                ["Sun", "Pulse", B("Amount 6 %, Period 5 s", "Amount 6 %, Periode 5 s")],
+                ["Sun_Glow", "Glow", B("Min 45 %, Period 2.5 s", "Min 45 %, Periode 2,5 s")],
+                ["Bubble_1 … Bubble_5", "Drift", B("Amplitude 40 px; Periods 5, 3.33, 2.5, 5, 3.33 s", "Amplitudo 40 px; Periode 5; 3,33; 2,5; 5; 3,33 s")],
+                ["Wave_Back", "Sway", B("Angle 3°, Period 5 s", "Sudut 3°, Periode 5 s")],
+                ["Wave_Front", "Float", B("Amplitude 14 px, Period 2.5 s", "Amplitudo 14 px, Periode 2,5 s")],
+                ["Ribbon", "Trace", B("Length 35 %, Period 5 s", "Panjang 35 %, Periode 5 s")],
+            ],
         ),
         NOTE(
             "Upload checklist: 5–60 s long, at least 1920×1080, standard frame rate, no logos or trademarks you do not own, a descriptive title and keywords. Mention “seamless loop” in the description.",
@@ -420,15 +442,18 @@ def build(doc, presets, shortcuts):
     s += [
         STRIP("icon", ["0 s", "0.6 s", "1.2 s", "2.4 s"]),
         STEPS(
-            ("<b>Composition</b> 512×512, 30 fps, 3 s, <b>Transparent</b> ticked.", "<b>Komposisi</b> 512×512, 30 fps, 3 s, <b>Transparan</b> dicentang."),
-            ("<b>Import</b> <code>icon.svg</code>: Badge, Plane (Plane_Body, Plane_Fold) and Trail.", "<b>Impor</b> <code>icon.svg</code>: Badge, Plane (Plane_Body, Plane_Fold), dan Trail."),
-            ("<b>Fly the plane with keyframes.</b> Select <code>Plane</code>. At 0 s, move it to the lower left and turn on the Position and Rotation stopwatches. At 1 s, move it to the centre; at 2 s, slightly up and right.", "<b>Terbangkan pesawat dengan keyframe.</b> Pilih <code>Plane</code>. Di 0 s, pindahkan ke kiri bawah dan nyalakan stopwatch Position dan Rotation. Di 1 s, pindahkan ke tengah; di 2 s, sedikit ke kanan atas."),
+            ("<b>Composition</b> 1080×1080, 30 fps, 3 s, <b>Transparent</b> ticked. (Vectors scale, so a large composition costs nothing for Lottie or SVG.)", "<b>Komposisi</b> 1080×1080, 30 fps, 3 s, <b>Transparan</b> dicentang. (Vektor bisa diskala, jadi komposisi besar tidak ada ruginya untuk Lottie atau SVG.)"),
+            ("<b>Import</b> <code>icon.svg</code>: Badge, Plane (Plane_Body, Plane_Fold) and Trail. Set the root layer's Scale to 190 %.", "<b>Impor</b> <code>icon.svg</code>: Badge, Plane (Plane_Body, Plane_Fold), dan Trail. Atur Scale layer root ke 190 %."),
+            ("<b>Badge.</b> At 0 s apply <i>Scale Pop</i> to <code>Badge</code>, and <i>Hover</i> (Loop) with Amplitude 6 px and Period 1.5 s so it keeps floating.", "<b>Badge.</b> Di 0 s terapkan <i>Scale Pop</i> pada <code>Badge</code>, dan <i>Hover</i> (Loop) dengan Amplitudo 6 px dan Periode 1,5 s agar terus melayang."),
+            ("<b>Fly the plane with keyframes.</b> Select <code>Plane</code>. At 0 s, drag it about 140 px left and 120 px down, rotate it to −25° and turn on the Position and Rotation stopwatches. At 1 s, drag it past its place (up and right) and rotate to 10°. At 2 s, put it back in place at 0°.", "<b>Terbangkan pesawat dengan keyframe.</b> Pilih <code>Plane</code>. Di 0 s, seret sekitar 140 px ke kiri dan 120 px ke bawah, putar ke −25°, lalu nyalakan stopwatch Position dan Rotation. Di 1 s, seret melewati tempatnya (ke kanan atas) dan putar ke 10°. Di 2 s, kembalikan ke tempatnya dengan 0°."),
             ("<b>Curve the path.</b> Drag the handles of the motion path on the canvas so the plane swoops.", "<b>Lengkungkan lintasan.</b> Seret handle motion path di canvas supaya pesawat meliuk."),
             ("<b>Ease it.</b> Select all keyframes and press [[F9]]. Check the speed graph [[Shift+F3]]: smooth hills, no sharp corners.", "<b>Beri easing.</b> Pilih semua keyframe lalu tekan [[F9]]. Cek grafik kecepatan [[Shift+F3]]: bukit halus, tanpa sudut tajam."),
-            ("<b>Trail and badge.</b> <i>Draw On</i> on <code>Trail</code> at 0.2 s, <i>Scale Pop</i> on <code>Badge</code> at 0 s, and <i>Hover</i> (Loop) on Plane for life after it lands.", "<b>Jejak dan badge.</b> <i>Draw On</i> pada <code>Trail</code> di 0,2 s, <i>Scale Pop</i> pada <code>Badge</code> di 0 s, dan <i>Hover</i> (Loop) pada Plane supaya tetap hidup setelah mendarat."),
+            ("<b>Trail.</b> At 1 s apply <i>Draw On</i> to <code>Trail</code> and set its Duration to 1 s.", "<b>Jejak.</b> Di 1 s terapkan <i>Draw On</i> pada <code>Trail</code> lalu atur Durasinya ke 1 s."),
             ("<b>Export</b> both <b>Lottie</b> [[Ctrl+Alt+L]] for the app and <b>Animated SVG</b> [[Ctrl+Alt+G]] for the website, and compare the sizes in the dialogs.", "<b>Ekspor</b> <b>Lottie</b> [[Ctrl+Alt+L]] untuk aplikasi dan <b>SVG Animasi</b> [[Ctrl+Alt+G]] untuk website, lalu bandingkan ukurannya di dialog."),
         ),
     ]
+
+    content3.tutorials_extra(doc, G_REF)
 
     # ============================================================ shortcuts
     s = doc.section("shortcuts", G_REF, B("Keyboard shortcuts", "Shortcut keyboard"), B("Shortcuts follow After Effects where possible.", "Shortcut mengikuti After Effects sebisa mungkin."))
@@ -482,9 +507,11 @@ def build(doc, presets, shortcuts):
         ("A panel disappeared.", "Panel hilang.", "Open it from the Window menu, or use Window ▸ Reset Layout.", "Buka lewat menu Window, atau pakai Window ▸ Reset Tata Letak."),
         ("The audio track says File missing.", "Trek audio bertuliskan File hilang.", "The audio was moved. Click the track and use Replace to locate it.", "Audio dipindah. Klik trek lalu pakai Ganti untuk mencarinya."),
     ]
-    for q_en, q_id, a_en, a_id in faq:
+    for q_en, q_id, a_en, a_id in faq + content3.FAQ_EXTRA:
         s.append(H4(q_en, q_id))
         s.append(P(a_en, a_id))
+
+    content3.glossary(doc, G_REF)
 
     # ============================================================ licences
     s = doc.section("licenses", G_REF, B("About and licences", "Tentang dan lisensi"))

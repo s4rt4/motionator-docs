@@ -1,5 +1,6 @@
 """Guide content, part 1: getting started and the interface. Every text is a pair (English,
 Indonesian). Part 2 (animation, export, reference) is in content2.py."""
+import content3
 from build import B, CARDS, CODE, DIAGRAM, H3, H4, IMG, LEGEND, NOTE, P, RAW, STEPS, STRIP, TABLE, TIP, UL, WARN
 
 G_START = B("Getting started", "Memulai")
@@ -161,6 +162,8 @@ def build(doc, presets, shortcuts):
         TIP("Everything you do can be undone with [[Ctrl+Z]] and redone with [[Ctrl+Shift+Z]]. A whole drag is one undo step.", "Semua tindakan bisa dibatalkan dengan [[Ctrl+Z]] dan diulang dengan [[Ctrl+Shift+Z]]. Satu kali seret dihitung satu langkah undo."),
     ]
 
+    content3.concepts(doc, G_START)
+
     # ============================================================ preparing SVG
     s = doc.section("preparing-svg", G_START, B("Preparing SVG files", "Menyiapkan file SVG"), B("Good layer names in your design tool make animation easy.", "Nama layer yang baik di aplikasi desain memudahkan animasi."))
     s += [
@@ -207,6 +210,8 @@ def build(doc, presets, shortcuts):
             "SVG yang baru diimpor diletakkan di tengah komposisi dengan ukuran aslinya, dan hanya diperkecil bila lebih besar dari komposisi. Anchor point setiap layer awalnya ada di tengah kotaknya.",
         ),
     ]
+
+    s += content3.svg_prep_extra()
 
     # ============================================================ interface
     s = doc.section("interface", G_UI, B("The workspace at a glance", "Sekilas ruang kerja"), B("An After Effects–style layout: panels around a central canvas.", "Tata letak gaya After Effects: panel-panel di sekeliling canvas utama."))
@@ -258,6 +263,8 @@ def build(doc, presets, shortcuts):
             "Dengan roda mouse di atas canvas: scroll menggeser tampilan, [[Shift]]+scroll menggeser ke samping, dan [[Ctrl]]+scroll atau [[Alt]]+scroll memperbesar di sekitar kursor.",
         ),
     ]
+
+    content3.menu_reference(doc, G_UI)
 
     # ============================================================ workspaces & docking
     s = doc.section("workspaces", G_UI, B("Workspaces and docking panels", "Workspace dan panel docking"), B("Arrange panels the way you work, and keep several layouts.", "Tata panel sesuai cara kerja Anda, dan simpan beberapa tata letak."))

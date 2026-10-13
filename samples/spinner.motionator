@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "canvas": {
+    "name": "Spinner",
+    "width": 512,
+    "height": 512,
+    "fps": [
+      30,
+      1
+    ],
+    "duration": 1411200000,
+    "background": {
+      "type": "transparent",
+      "value": "#000000"
+    }
+  },
+  "assets": [
+    {
+      "id": "a1",
+      "name": "spinner.svg",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"512\" height=\"512\" viewBox=\"0 0 512 512\">\n  <circle id=\"Track\" cx=\"256\" cy=\"256\" r=\"170\" fill=\"none\" stroke=\"#e5e7eb\" stroke-width=\"36\"/>\n  <g id=\"Arcs\" fill=\"none\" stroke=\"#2563eb\" stroke-width=\"36\" stroke-linecap=\"round\">\n    <path id=\"Arc_A\" d=\"M256 86 A170 170 0 0 1 426 256\"/>\n    <path id=\"Arc_B\" d=\"M256 426 A170 170 0 0 1 86 256\"/>\n  </g>\n  <circle id=\"Core\" cx=\"256\" cy=\"256\" r=\"58\" fill=\"#2563eb\"/>\n</svg>\n",
+      "hash": "80ba4d4680ba995c"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "a1",
+      "assetId": "a1",
+      "svgId": "",
+      "parent": null,
+      "label": "none",
+      "anchor": [
+        256.0,
+        256.0
+      ],
+      "base": {
+        "pos": [
+          256.0,
+          256.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Track",
+      "assetId": "a1",
+      "svgId": "Track",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        256.00001525878906,
+        256.00001525878906
+      ],
+      "base": {
+        "pos": [
+          256.00001525878906,
+          256.00001525878906
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Arcs",
+      "assetId": "a1",
+      "svgId": "Arcs",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        256.00001525878906,
+        256.0
+      ],
+      "base": {
+        "pos": [
+          256.00001525878906,
+          256.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Arc_A",
+      "assetId": "a1",
+      "svgId": "Arc_A",
+      "parent": "a1_Arcs",
+      "label": "none",
+      "anchor": [
+        341.0,
+        171.0
+      ],
+      "base": {
+        "pos": [
+          341.0,
+          171.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Arc_B",
+      "assetId": "a1",
+      "svgId": "Arc_B",
+      "parent": "a1_Arcs",
+      "label": "none",
+      "anchor": [
+        171.00001525878906,
+        341.0
+      ],
+      "base": {
+        "pos": [
+          171.00001525878906,
+          341.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    },
+    {
+      "id": "a1_Core",
+      "assetId": "a1",
+      "svgId": "Core",
+      "parent": "a1",
+      "label": "none",
+      "anchor": [
+        256.0,
+        256.0
+      ],
+      "base": {
+        "pos": [
+          256.0,
+          256.0
+        ],
+        "scale": [
+          1.0,
+          1.0
+        ],
+        "rot": 0.0,
+        "opacity": 1.0
+      }
+    }
+  ],
+  "tracks": [],
+  "presetInstances": [
+    {
+      "id": "p1",
+      "preset": "loop.spin",
+      "order": 0,
+      "targets": [
+        "a1_Arcs"
+      ],
+      "start": 0,
+      "duration": 1411200000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "period": 1.0
+      }
+    },
+    {
+      "id": "p2",
+      "preset": "loop.pulse",
+      "order": 1,
+      "targets": [
+        "a1_Core"
+      ],
+      "start": 0,
+      "duration": 1411200000,
+      "anchorTo": "start",
+      "blend": "additive",
+      "params": {
+        "amount": 10.0,
+        "period": 1.0
+      }
+    }
+  ],
+  "nextId": 3
+}
