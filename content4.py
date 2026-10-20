@@ -41,6 +41,12 @@ def text_layers(doc, G):
         ),
         STRIP("neon", ["0.1 s", "0.6 s", "1.2 s", "2.5 s"], "Neon Flicker on two lines (Segoe Script, Layer per Line, 0.5 s stagger).", "Neon Flicker pada dua baris (Segoe Script, Layer per Baris, stagger 0,5 s)."),
         STRIP("typewriter", ["0.15 s", "0.4 s", "0.65 s", "1.2 s"], "Typewriter with a 0.12 s step.", "Typewriter dengan jeda 0,12 s."),
+        H3("text-wave", "Looping waves across letters", "Gelombang berulang di sepanjang huruf"),
+        STRIP("wave", ["0 s", "0.25 s", "0.5 s", "0.75 s"], "Float (period 1 s) on each letter with a 0.15 s stagger: a wave that still loops seamlessly.", "Float (periode 1 s) pada setiap huruf dengan stagger 0,15 s: gelombang yang tetap loop mulus."),
+        P(
+            "With a <b>Loop</b> preset (Float, Swing, Pulse, Glow Pulse…), stagger shifts each letter's <i>phase</i> rather than its start: every letter moves from the first frame, each a step behind the one before, and the clip still ends exactly as it began. This is how to make waving or rippling titles for stock loops.",
+            "Pada preset <b>Loop</b> (Float, Swing, Pulse, Glow Pulse, dan lainnya), stagger menggeser <i>fase</i> setiap huruf, bukan awalnya: setiap huruf bergerak sejak frame pertama, masing-masing tertinggal satu jeda dari huruf sebelumnya, dan klip tetap berakhir persis seperti awalnya. Begitulah cara membuat judul yang melambai atau beriak untuk loop stok.",
+        ),
         H3("text-edit", "Editing text later", "Mengedit teks belakangan"),
         P(
             "Change the text or its settings any time. Letters that keep their place keep their presets and keyframes, so changing <i>Hey</i> to <i>Hello</i> keeps the animation on H and e and adds new layers for the rest. The text layer itself stays where you put it.",
@@ -58,6 +64,8 @@ def generators(doc, G):
     s += [
         STRIP("gen1", ["Confetti", "Snow", "Bokeh", "Bubbles"]),
         STRIP("gen2", ["Plexus", "Fireworks", "Twinkle", B("Stacked + text", "Ditumpuk + teks")["en"]]),
+        STRIP("gen3", ["Equalizer", "Equalizer · circle", "Gradient", "Waves"]),
+        STRIP("gen4", ["Rings", "Rings · stripes", "Equalizer · mirror"]),
         P(
             "A generator draws hundreds of moving pieces from a few settings. Every piece moves on a path worked out for each moment, never simulated step by step, and every motion repeats a whole number of times over the composition. So a generator always loops seamlessly, any frame renders on its own, and the same settings always give the same result.",
             "Generator menggambar ratusan elemen bergerak dari beberapa pengaturan. Setiap elemen bergerak di jalur yang dihitung untuk setiap momen, bukan disimulasikan langkah demi langkah, dan setiap gerakan berulang dalam jumlah bulat sepanjang komposisi. Jadi generator selalu loop mulus, setiap frame bisa dirender sendiri, dan pengaturan yang sama selalu memberi hasil yang sama.",
@@ -78,6 +86,10 @@ def generators(doc, G):
                 ["Plexus", B("Moving dots linked by lines when close (tech, data)", "Titik bergerak yang tersambung garis saat berdekatan (teknologi, data)"), B("Count, link distance, drift, dot and line size and colour", "Jumlah, jarak sambung, gerak, ukuran dan warna titik serta garis")],
                 ["Fireworks", B("Bursts with trails, gravity and twinkle", "Ledakan dengan ekor, gravitasi, dan kerlip"), B("Bursts per loop, sparks, size, gravity, 4 colours", "Ledakan per loop, percikan, ukuran, gravitasi, 4 warna")],
                 ["Twinkle", B("Stars and sparkles twinkling in place", "Bintang dan kilau yang berkelip di tempat"), B("Count, size, twinkle rate, colour", "Jumlah, ukuran, kecepatan kelip, warna")],
+                ["Equalizer", B("Audio bars to a beat: from the bottom, mirrored or in a circle", "Bar audio mengikuti ketukan: dari bawah, dicerminkan, atau melingkar"), B("Bars, style, height, beat (bpm), gap, base and tip colour", "Jumlah bar, gaya, tinggi, ketukan (bpm), celah, warna pangkal dan ujung")],
+                ["Gradient", B("A soft gradient flowing slowly (mesh-gradient look)", "Gradien lembut yang mengalir pelan (tampilan mesh gradient)"), B("Speed, spread, 4 colours (the first is the base)", "Kecepatan, sebaran, 4 warna (yang pertama jadi dasar)")],
+                ["Waves", B("Layered waves rolling by", "Gelombang berlapis yang mengalun"), B("Layers, wave height, waves across, speed, 4 colours (back to front)", "Lapisan, tinggi gelombang, jumlah gelombang, kecepatan, 4 warna (belakang ke depan)")],
+                ["Rings", B("Colour bands in rings or diagonal stripes, always moving outward", "Pita warna melingkar atau garis diagonal yang terus bergerak keluar"), B("Shape, band width, speed, 4 colours", "Bentuk, lebar pita, kecepatan, 4 warna")],
             ],
         ),
         H3("generator-tips", "Working with generators", "Bekerja dengan generator"),
