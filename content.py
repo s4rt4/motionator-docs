@@ -183,7 +183,7 @@ def build(doc, presets, shortcuts):
         ),
         H3("svg-checklist", "Checklist before importing", "Daftar periksa sebelum impor"),
         UL(
-            ("<b>Outline text</b> (Create Outlines / Object to Path). Live text is not drawn.", "<b>Ubah teks menjadi outline</b> (Create Outlines / Object to Path). Teks yang masih bisa diedit tidak digambar."),
+            ("<b>Outline text</b> (Create Outlines / Object to Path). Live text is not drawn; for animated titles, make the text in Motionator with <b>Layer ▸ New Text</b> instead.", "<b>Ubah teks menjadi outline</b> (Create Outlines / Object to Path). Teks yang masih bisa diedit tidak digambar; untuk judul yang bergerak, buat teksnya di Motionator lewat <b>Layer ▸ Teks Baru</b>."),
             ("<b>Use strokes for line art</b> you want to draw on with Trim Paths. Filled shapes cannot be drawn on.", "<b>Pakai stroke untuk line art</b> yang ingin tergambar dengan Trim Paths. Bentuk berisi (fill) tidak bisa tergambar."),
             ("<b>Group what moves together</b> and name the group, e.g. a wheel with its spokes.", "<b>Kelompokkan yang bergerak bersama</b> dan beri nama grupnya, misalnya roda beserta jari-jarinya."),
             ("<b>Avoid filters and raster images</b> if you also need Lottie: they render in video but cannot be exported to Lottie.", "<b>Hindari filter dan gambar raster</b> bila juga butuh Lottie: keduanya tampil di video tetapi tidak bisa diekspor ke Lottie."),
@@ -197,7 +197,7 @@ def build(doc, presets, shortcuts):
         TABLE(
             [B("Warning", "Peringatan"), B("What to do", "Yang perlu dilakukan")],
             [
-                [B("Text not outlined", "Teks belum di-outline"), B("Convert text to outlines and import again.", "Ubah teks menjadi outline lalu impor ulang.")],
+                [B("Text not outlined", "Teks belum di-outline"), B("Convert text to outlines and import again, or make the text with Layer ▸ New Text to animate it letter by letter.", "Ubah teks menjadi outline lalu impor ulang, atau buat teksnya lewat Layer ▸ Teks Baru agar bisa dianimasikan per huruf.")],
                 [B("Filters (blur, shadow…)", "Filter (blur, shadow, dll.)"), B("Fine for video; slows 4K rendering and is left out of Lottie.", "Aman untuk video; memperlambat render 4K dan tidak ikut ke Lottie.")],
                 [B("Patterns / blend modes", "Pattern / blend mode"), B("Shown in video; Lottie support is limited.", "Tampil di video; dukungan Lottie terbatas.")],
                 [B("Raster images", "Gambar raster"), B("Blurry when scaled up; makes Lottie files larger.", "Kabur bila diperbesar; memperbesar file Lottie.")],

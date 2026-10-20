@@ -1,6 +1,7 @@
 """Guide content, part 2: animating, export, guides and reference."""
 from build import B, CARDS, CODE, DIAGRAM, H3, H4, IMG, LEGEND, NOTE, P, RAW, STEPS, STRIP, TABLE, TIP, UL, WARN, kbd
 import content3
+import content4
 from content import G_ANIM, G_OUT, G_REF, svg_blend, svg_easing, svg_loop, svg_stagger, svg_trim
 
 YES = '<span class="tag yes">✓</span>'
@@ -17,7 +18,7 @@ def keys(ks):
 
 def build(doc, presets, shortcuts):
     # ============================================================ presets
-    s = doc.section("presets", G_ANIM, B("Presets", "Preset"), B("82 ready-made motions in four categories, applied with a double-click.", "82 gerakan siap pakai dalam empat kategori, diterapkan dengan klik dua kali."))
+    s = doc.section("presets", G_ANIM, B("Presets", "Preset"), B(f"{len(presets)} ready-made motions in four categories, applied with a double-click.", f"{len(presets)} gerakan siap pakai dalam empat kategori, diterapkan dengan klik dua kali."))
     s += [
         H3("preset-categories", "The four categories", "Empat kategori"),
         TABLE(
@@ -189,8 +190,8 @@ def build(doc, presets, shortcuts):
     s = doc.section("effects", G_ANIM, B("Effects and what each export supports", "Efek dan dukungan setiap ekspor"))
     s += [
         P(
-            "Every layer has Skew, Blur, Tint and Reveal in the Properties panel, each with its own stopwatch. Not every web format can show every effect, so plan with this table if you export to Lottie or SVG:",
-            "Setiap layer punya Skew, Blur, Tint, dan Reveal di panel Properties, masing-masing dengan stopwatch sendiri. Tidak semua format web bisa menampilkan setiap efek, jadi rencanakan dengan tabel ini bila mengekspor ke Lottie atau SVG:",
+            "Every layer has Skew, Blur, Tint, Reveal and Glow in the Properties panel, each with its own stopwatch. Not every web format can show every effect, so plan with this table if you export to Lottie or SVG:",
+            "Setiap layer punya Skew, Blur, Tint, Reveal, dan Glow di panel Properties, masing-masing dengan stopwatch sendiri. Tidak semua format web bisa menampilkan setiap efek, jadi rencanakan dengan tabel ini bila mengekspor ke Lottie atau SVG:",
         ),
         TABLE(
             [B("Feature", "Fitur"), B("Video", "Video"), "Lottie", B("Animated SVG", "SVG animasi")],
@@ -203,6 +204,11 @@ def build(doc, presets, shortcuts):
                 ["Reveal / wipe", YES, part("as a mask (not on the root SVG layer)", "sebagai mask (tidak pada layer SVG utama)"), NO],
                 [B("Clip paths from the SVG", "Clip-path dari SVG"), YES, part("outer clip only when nested", "hanya clip terluar bila bertingkat"), YES],
                 [B("SVG filters, patterns, blend modes", "Filter, pattern, blend mode SVG"), YES, NO, YES],
+                [B("Brush reveal", "Reveal sapuan kuas"), YES, part("as a wipe from the left", "sebagai wipe dari kiri"), NO],
+                ["Glow", YES, NO, NO],
+                [B("2.5D presets (Coin Spin, Card Flip, Peel)", "Preset 2.5D (Coin Spin, Card Flip, Peel)"), YES, NO, NO],
+                [B("Generator layers", "Layer generator"), YES, NO, NO],
+                [B("Text layers", "Layer teks"), YES, YES, YES],
                 ["Audio", YES, NO, NO],
             ],
         ),
@@ -258,6 +264,10 @@ def build(doc, presets, shortcuts):
         ),
     ]
 
+    content4.text_layers(doc, G_ANIM)
+    content4.generators(doc, G_ANIM)
+    content4.depth_presets(doc, G_ANIM)
+    content4.glow(doc, G_ANIM)
     content3.principles(doc, G_ANIM)
 
     # ============================================================ render queue
@@ -376,6 +386,7 @@ def build(doc, presets, shortcuts):
 
     content3.web_integration(doc, G_OUT)
     content3.microstock(doc, G_OUT)
+    content4.stock_tools(doc, G_OUT)
 
     # ============================================================ projects
     s = doc.section("projects", G_OUT, B("Projects, auto-save and recovery", "Proyek, auto-save, dan pemulihan"))
@@ -456,6 +467,8 @@ def build(doc, presets, shortcuts):
     content3.tutorials_extra(doc, G_REF)
 
     # ============================================================ shortcuts
+    content4.ai(doc, G_REF)
+
     s = doc.section("shortcuts", G_REF, B("Keyboard shortcuts", "Shortcut keyboard"), B("Shortcuts follow After Effects where possible.", "Shortcut mengikuti After Effects sebisa mungkin."))
     groups = [
         ("file", B("File", "File")),
