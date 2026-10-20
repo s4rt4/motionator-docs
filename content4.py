@@ -60,15 +60,19 @@ def text_layers(doc, G):
 
 
 def generators(doc, G):
-    s = doc.section("generators", G, B("Generator layers: confetti, snow, bokeh and more", "Layer generator: confetti, salju, bokeh, dan lainnya"), B("Content made from settings instead of artwork, always a seamless loop.", "Konten yang dibuat dari pengaturan, bukan dari artwork, dan selalu loop mulus."))
+    s = doc.section("generators", G, B("Generator layers: confetti, counters, landscapes and more", "Layer generator: confetti, counter, pemandangan, dan lainnya"), B("Twenty-three kinds of content made from settings instead of artwork, ready to loop.", "Dua puluh tiga jenis konten yang dibuat dari pengaturan, bukan dari artwork, siap untuk loop."))
     s += [
         STRIP("gen1", ["Confetti", "Snow", "Bokeh", "Bubbles"]),
         STRIP("gen2", ["Plexus", "Fireworks", "Twinkle", B("Stacked + text", "Ditumpuk + teks")["en"]]),
         STRIP("gen3", ["Equalizer", "Equalizer · circle", "Gradient", "Waves"]),
         STRIP("gen4", ["Rings", "Rings · stripes", "Equalizer · mirror"]),
+        STRIP("gen5", ["Drone Show", "Constellation", "Particle Text", "Word Cloud"]),
+        STRIP("gen6", ["Counter · flip", "Counter · odometer", "Circuit", "Halftone"]),
+        STRIP("gen7", ["Landscape", "Paper Cut · tunnel", "Paper Cut · hills", "Grid Floor"]),
+        STRIP("gen8", ["Ensō", "Chart · bars", "Chart · line", "Chart · donut"]),
         P(
-            "A generator draws hundreds of moving pieces from a few settings. Every piece moves on a path worked out for each moment, never simulated step by step, and every motion repeats a whole number of times over the composition. So a generator always loops seamlessly, any frame renders on its own, and the same settings always give the same result.",
-            "Generator menggambar ratusan elemen bergerak dari beberapa pengaturan. Setiap elemen bergerak di jalur yang dihitung untuk setiap momen, bukan disimulasikan langkah demi langkah, dan setiap gerakan berulang dalam jumlah bulat sepanjang komposisi. Jadi generator selalu loop mulus, setiap frame bisa dirender sendiri, dan pengaturan yang sama selalu memberi hasil yang sama.",
+            "A generator draws hundreds of moving pieces from a few settings. Every piece moves on a path worked out for each moment, never simulated step by step, and every motion repeats a whole number of times over the composition. So a generator loops seamlessly (the ones that build up can too, see below), any frame renders on its own, and the same settings always give the same result.",
+            "Generator menggambar ratusan elemen bergerak dari beberapa pengaturan. Setiap elemen bergerak di jalur yang dihitung untuk setiap momen, bukan disimulasikan langkah demi langkah, dan setiap gerakan berulang dalam jumlah bulat sepanjang komposisi. Jadi generator loop mulus (yang dibangun bertahap juga bisa, lihat di bawah), setiap frame bisa dirender sendiri, dan pengaturan yang sama selalu memberi hasil yang sama.",
         ),
         H3("generator-add", "Adding a generator", "Menambah generator"),
         STEPS(
@@ -90,7 +94,28 @@ def generators(doc, G):
                 ["Gradient", B("A soft gradient flowing slowly (mesh-gradient look)", "Gradien lembut yang mengalir pelan (tampilan mesh gradient)"), B("Speed, spread, 4 colours (the first is the base)", "Kecepatan, sebaran, 4 warna (yang pertama jadi dasar)")],
                 ["Waves", B("Layered waves rolling by", "Gelombang berlapis yang mengalun"), B("Layers, wave height, waves across, speed, 4 colours (back to front)", "Lapisan, tinggi gelombang, jumlah gelombang, kecepatan, 4 warna (belakang ke depan)")],
                 ["Rings", B("Colour bands in rings or diagonal stripes, always moving outward", "Pita warna melingkar atau garis diagonal yang terus bergerak keluar"), B("Shape, band width, speed, 4 colours", "Bentuk, lebar pita, kecepatan, 4 warna")],
+                ["Drone Show", B("Hundreds of lights flying into a text, then a heart, star or circle, then scattering", "Ratusan titik cahaya terbang membentuk teks, lalu hati, bintang, atau lingkaran, lalu bubar"), B("Text, font, second shape, count, size, 3 colours", "Teks, font, bentuk kedua, jumlah, ukuran, 3 warna")],
+                ["Constellation", B("Stars appearing along the letters' outlines, joined by lines", "Bintang muncul di sepanjang tepi huruf, tersambung garis"), B("Text, font, star spacing and size, line width, background stars, 2 colours", "Teks, font, jarak dan ukuran bintang, tebal garis, bintang latar, 2 warna")],
+                ["Particle Text", B("Particles flying in to form a text, then scattering", "Partikel melesat membentuk teks, lalu tersebar"), B("Text, font, count, size, spread, 3 colours", "Teks, font, jumlah, ukuran, sebaran, 3 warna")],
+                ["Word Cloud", B("Words popping in and packing together, the first one biggest", "Kata-kata muncul dan tersusun rapat, kata pertama paling besar"), B("Words (one per line), font, biggest size, some vertical, 4 colours", "Kata (satu per baris), font, ukuran terbesar, sebagian tegak, 4 warna")],
+                ["Counter", B("A number counting up or down: flip clock, odometer, slot machine or plain", "Angka yang menghitung naik atau turun: flip clock, odometer, slot, atau angka biasa"), B("Style, from, to, minimum digits, start, end, clip ending, size, font, digit and card colour", "Gaya, dari, ke, digit minimum, mulai, selesai, akhir klip, ukuran, font, warna angka dan kartu")],
+                ["Circuit", B("A circuit board with chips, 45° traces and pulses of light", "Papan sirkuit dengan chip, jalur 45°, dan pulsa cahaya"), B("Extra traces, chips, grid step, share of pulses, pulse speed, 4 colours (board, traces, pulses, chips)", "Jalur tambahan, chip, jarak kisi, porsi pulsa, kecepatan pulsa, 4 warna (papan, jalur, pulsa, chip)")],
+                ["Halftone", B("Pop-art dots growing and shrinking in waves", "Titik pop art yang membesar dan mengecil seperti gelombang"), B("Pattern (waves, ripples, diagonal), dot spacing, grid angle, waves, speed, 2 colours", "Pola (gelombang, riak, diagonal), jarak titik, sudut kisi, jumlah gelombang, kecepatan, 2 warna")],
+                ["Landscape", B("Hills, mountains and pines scrolling sideways with parallax", "Bukit, gunung, dan pohon cemara yang bergeser ke samping dengan parallax"), B("Hill layers, speed, trees, sun, 4 colours (sky top, horizon, far, near)", "Lapisan bukit, kecepatan, pohon, matahari, 4 warna (langit atas, cakrawala, jauh, dekat)")],
+                ["Paper Cut", B("Cut paper with soft shadows: an endless tunnel or layered hills", "Kertas berpotongan dengan bayangan lembut: terowongan tanpa akhir atau bukit berlapis"), B("Style, hole shape, layers, speed, shadow, 4 colours (the first is the deepest)", "Gaya, bentuk lubang, lapisan, kecepatan, bayangan, 4 warna (yang pertama paling dalam)")],
+                ["Grid Floor", B("A synthwave grid rushing towards you under a striped sun", "Kisi synthwave yang melaju ke arah Anda di bawah matahari bergaris"), B("Speed, line width, horizon height, sun, 4 colours (sky, horizon, grid, sun)", "Kecepatan, tebal garis, tinggi cakrawala, matahari, 4 warna (langit, cakrawala, kisi, matahari)")],
+                ["Ensō", B("A Zen circle of dry brush painted in one stroke", "Lingkaran Zen dari sapuan kuas kering dalam satu tarikan"), B("Size, brush width, start, end, clip ending, ink colour", "Ukuran, lebar kuas, mulai, selesai, akhir klip, warna tinta")],
+                ["Chart", B("Bars, a line or a donut growing in, with counting numbers", "Batang, garis, atau donat yang tumbuh, dengan angka yang ikut menghitung"), B("Type, values (comma separated), numbers, font, start, end, clip ending, 4 colours", "Jenis, nilai (dipisah koma), angka, font, mulai, selesai, akhir klip, 4 warna")],
             ],
+        ),
+        H3("generator-words", "Text, counters and charts", "Teks, counter, dan grafik"),
+        P(
+            "Drone Show, Constellation, Particle Text, Word Cloud, Counter and Chart draw letters or digits with an installed font, picked in their <b>Font</b> setting. Type the text in the <b>Text</b> box and press [[Enter]]; Word Cloud takes one word per line, applied with [[Ctrl+Enter]].",
+            "Drone Show, Constellation, Particle Text, Word Cloud, Counter, dan Chart menggambar huruf atau angka dengan font yang terpasang, dipilih di pengaturan <b>Font</b>. Ketik teksnya di kotak <b>Teks</b> lalu tekan [[Enter]]; Word Cloud menerima satu kata per baris, diterapkan dengan [[Ctrl+Enter]].",
+        ),
+        P(
+            "Counter, Ensō and Chart <b>build up</b>: they run between <b>Start</b> and <b>End</b> (percent of the composition) and then hold. For a seamless stock loop, set <b>Clip ending</b> to <i>Go back to the start</i>: the last part of the clip returns them to how they began. The Counter's flip clock turns each card when its digit changes, the odometer rolls a higher drum while the ones below it pass 9 to 0, and the slot machine spins each reel and lands it on the final digit, left to right.",
+            "Counter, Ensō, dan Chart <b>dibangun bertahap</b>: berjalan antara <b>Mulai</b> dan <b>Selesai</b> (persen komposisi), lalu berhenti. Untuk loop stok yang mulus, atur <b>Akhir klip</b> ke <i>Kembali ke awal</i>: bagian akhir klip mengembalikannya ke keadaan semula. Flip clock pada Counter membalik setiap kartu saat digitnya berubah, odometer memutar drum yang lebih tinggi saat digit di bawahnya bergulir dari 9 ke 0, dan slot memutar setiap gulungan lalu menghentikannya di digit akhir, dari kiri ke kanan.",
         ),
         H3("generator-tips", "Working with generators", "Bekerja dengan generator"),
         UL(
@@ -100,14 +125,14 @@ def generators(doc, G):
             ("<b>Video only.</b> Lottie and animated SVG exports leave generator layers empty and say so in their report.", "<b>Hanya untuk video.</b> Ekspor Lottie dan SVG animasi membiarkan layer generator kosong dan menyebutkannya di laporan."),
         ),
         TIP(
-            "Fireworks, Plexus and Twinkle look their best with a little <b>Glow</b> on a dark background.",
-            "Fireworks, Plexus, dan Twinkle paling bagus dengan sedikit <b>Glow</b> di latar gelap.",
+            "Fireworks, Plexus, Twinkle, Drone Show, Constellation and Circuit look their best with a little <b>Glow</b> on a dark background.",
+            "Fireworks, Plexus, Twinkle, Drone Show, Constellation, dan Circuit paling bagus dengan sedikit <b>Glow</b> di latar gelap.",
         ),
     ]
 
 
 def depth_presets(doc, G):
-    s = doc.section("presets-2-5d", G, B("2.5D presets and brush reveals", "Preset 2.5D dan reveal sapuan kuas"), B("Coins, cards and paper that turn and peel, on any artwork.", "Koin, kartu, dan kertas yang berputar dan terkelupas, pada artwork apa pun."))
+    s = doc.section("presets-2-5d", G, B("2.5D presets, brush reveals and render effects", "Preset 2.5D, reveal sapuan kuas, dan efek render"), B("Coins, cards and paper that turn and peel, long shadows, waving flags and sparklers, on any artwork.", "Koin, kartu, dan kertas yang berputar dan terkelupas, bayangan panjang, bendera berkibar, dan kembang api lidi, pada artwork apa pun."))
     s += [
         P(
             "These presets do more than move a layer: the renderer gives it thickness, a back side, a shine or a paper fold. They work on any shape, not only circles and rectangles, and render in video only.",
@@ -125,16 +150,26 @@ def depth_presets(doc, G):
                 ["Peel On / Peel Off", "Enter / Exit", B("Starts at a corner or an edge, paper back colour, shadow; the flap leaves the screen", "Mulai dari sudut atau tepi, warna belakang kertas, bayangan; lipatan keluar layar")],
                 ["Peel Corner", "Emphasis", B("A corner lifts by an amount and settles back", "Sudut terangkat sejauh nilai tertentu lalu kembali rata")],
                 ["Brush In / Brush Out", "Enter / Exit", B("Painted in (or wiped away) by a brush going back and forth", "Dilukis masuk (atau dihapus) oleh kuas yang menyapu bolak-balik")],
+                ["Long Shadow / Long Shadow Grow", "Loop / Enter", B("A flat shadow swept away from the light: direction, length, colour, opacity, fade at the end", "Bayangan datar yang memanjang menjauhi cahaya: arah, panjang, warna, opasitas, memudar di ujung")],
+                ["Flag Wave", "Loop", B("Waves like cloth with light and shade in the folds: wave height, waves across, period, left edge held, light and shade", "Berkibar seperti kain dengan terang-gelap di lipatan: tinggi gelombang, jumlah gelombang, periode, tepi kiri dipegang, terang-gelap")],
+                ["Sparkler Draw", "Enter", B("Strokes draw on while sparks fly from the tip: sparks per second, size, launch speed, colour, ease", "Garis tergambar sementara percikan berhamburan dari ujungnya: percikan per detik, ukuran, kecepatan lontar, warna, ease")],
             ],
         ),
+        STRIP("longshadow", ["0.1 s", "0.3 s", "0.6 s", "1.2 s"], "Long Shadow Grow on a badge: the shadow keeps the badge's outline, at 45°.", "Long Shadow Grow pada badge: bayangannya mengikuti bentuk badge, pada sudut 45°."),
+        STRIP("flag", ["0 s", "0.4 s", "0.8 s", "1.2 s"], "Flag Wave: held at the pole, with light and shade in the folds; a seamless loop.", "Flag Wave: dipegang di tiang, dengan terang-gelap di lipatan; loop mulus."),
+        STRIP("sparkler", ["0.3 s", "0.9 s", "1.6 s", "2.4 s"], "Sparkler Draw on a stroked path: sparks fly and fall from the drawing tip and burn out after it.", "Sparkler Draw pada path ber-stroke: percikan terlontar dan jatuh dari ujung yang sedang menggambar, lalu padam setelahnya."),
         STRIP("brush", ["0.3 s", "0.7 s", "1.1 s", "1.7 s"], "Brush In: four back-and-forth strokes paint the layer in. The same reveal is in Properties ▸ Reveal from ▸ Brush strokes.", "Brush In: empat sapuan bolak-balik melukis layer. Reveal yang sama ada di Properties ▸ Reveal dari ▸ Sapuan kuas."),
         TIP(
             "For a page-curl transition, put all the artwork in one group covering the frame and apply <b>Peel Off</b> to it over a <code>#00B140</code> background, then run <b>Stock check</b> in the Render Queue.",
             "Untuk transisi page curl, taruh semua artwork dalam satu grup yang menutupi frame, terapkan <b>Peel Off</b> di atas latar <code>#00B140</code>, lalu jalankan <b>Cek stok</b> di Render Queue.",
         ),
         NOTE(
-            "A layer that spins does not also peel (the spin wins). Bake to keyframes keeps 2.5D presets as presets, since they have no keyframe form.",
-            "Layer yang berputar tidak sekaligus terkelupas (putaran yang dipakai). Bake ke keyframe mempertahankan preset 2.5D sebagai preset, karena tidak punya bentuk keyframe.",
+            "A layer that spins does not also peel (the spin wins), and a layer that spins or peels does not wave or cast a long shadow. Bake to keyframes keeps these presets as presets, since they have no keyframe form, and Lottie and animated SVG leave them out.",
+            "Layer yang berputar tidak sekaligus terkelupas (putaran yang dipakai), dan layer yang berputar atau terkelupas tidak berkibar atau berbayangan panjang. Bake ke keyframe mempertahankan preset ini sebagai preset, karena tidak punya bentuk keyframe, dan Lottie serta SVG animasi tidak menyertakannya.",
+        ),
+        TIP(
+            "Put a long shadow on the outermost group of an icon, not on its parts as well: shadows of shadows take much longer to render.",
+            "Pasang long shadow di grup terluar ikon, jangan juga di bagian-bagiannya: bayangan dari bayangan jauh lebih lama dirender.",
         ),
     ]
 
@@ -238,9 +273,14 @@ def ai(doc, G):
             "Anda tetap bisa mengedit selama agent bekerja; agent mengambil perubahan Anda sebelum setiap langkah. <b>Batalkan</b> menghentikannya. Agent tidak menyimpan, merender, atau mengekspor kecuali Anda minta.",
         ),
         H3("mcp-setup", "Using Motionator from Claude Code or opencode", "Memakai Motionator dari Claude Code atau opencode"),
+        STEPS(
+            ("Open <b>Help ▸ Connect AI (Claude Code, opencode)…</b>. Each agent shows whether it is installed and connected.", "Buka <b>Help ▸ Hubungkan AI (Claude Code, opencode)…</b>. Setiap agent menunjukkan apakah sudah terpasang dan terhubung."),
+            ("Click <b>Connect</b> next to the agent. Motionator registers its server for you: with Claude Code's own <code>claude mcp add</code>, and in opencode's global settings (a copy of the original file is kept as <code>opencode.jsonc.motionator-backup</code>).", "Klik <b>Hubungkan</b> di sebelah agent. Motionator mendaftarkan servernya untuk Anda: lewat <code>claude mcp add</code> milik Claude Code, dan di pengaturan global opencode (salinan file aslinya disimpan sebagai <code>opencode.jsonc.motionator-backup</code>)."),
+            ("Click <b>Open terminal</b> to start the agent in a new window, in your Documents folder, and ask away. <b>Disconnect</b> removes the registration again.", "Klik <b>Buka terminal</b> untuk menjalankan agent di jendela baru, di folder Documents, lalu langsung minta. <b>Lepas</b> menghapus pendaftarannya lagi."),
+        ),
         P(
-            "Register the server once. The installer puts it next to Motionator, normally in <code>%LOCALAPPDATA%\\Motionator</code>:",
-            "Daftarkan servernya sekali. Installer menaruhnya di sebelah Motionator, biasanya di <code>%LOCALAPPDATA%\\Motionator</code>:",
+            "To register by hand instead: the installer puts the server next to Motionator, normally in <code>%LOCALAPPDATA%\\Motionator</code>.",
+            "Untuk mendaftarkan secara manual: installer menaruh servernya di sebelah Motionator, biasanya di <code>%LOCALAPPDATA%\\Motionator</code>.",
         ),
         CODE('claude mcp add motionator -- "%LOCALAPPDATA%\\Motionator\\motionator-mcp.exe"'),
         P("For opencode, add it to <code>opencode.json</code>:", "Untuk opencode, tambahkan ke <code>opencode.json</code>:"),
